@@ -6,8 +6,6 @@ import { logout } from '../Auth/auth';
 
 export const SellerSidebar = () => {
     const location = useLocation();
-  const adminEmail = 'rashedecomm728@gmail.com'; 
-  const handleContactAdmin = () => { window.location.href = `mailto:${adminEmail}`;
     return (
         <div className='sidebar adminSidebar'>
             <Sider
@@ -53,4 +51,4 @@ export const SellerSidebar = () => {
             </Sider>
         </div>
     )
-}}
+}
