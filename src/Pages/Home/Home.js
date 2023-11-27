@@ -488,6 +488,7 @@ export const Home = () => {
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
                           <span> rashedecomm728@gmail.com</span>
+                          
                           <span> Rashed Almahila</span>
               
             </a>
