@@ -1,5 +1,5 @@
 import React from 'react';
-import { LatestProducts } from '../../Components/Home/LatestProducts';
+import { أحدثالمنتجات } from '../../Components/Home/LatestProducts';
 import gifts from './../../assets/images/gifts.png';
 import saving from './../../assets/images/saving-img.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
@@ -378,7 +378,7 @@ export const Home = () => {
           جودة مضمونة
             </h5>
             <p>
-            ل منتج يمر بفحص دقيق لضمان رضاك التام
+            كل منتج يمر بفحص دقيق لضمان رضاك التام
             </p>
           </div>
         </div>
@@ -445,11 +445,11 @@ export const Home = () => {
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <h5>
-            ABOUT US
+          رسالتنا
           </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-          </p>
+          رسالتنا بسيطة: نقدم لك وجهة واحدة لجميع احتياجاتك التسوق عبر الإنترنت
+          . نسعى لجعل رحلتك في التسوق عبر الإنترنت ممتعة وسهلة وآمنة          </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="info_form ">
@@ -466,11 +466,10 @@ export const Home = () => {
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-            NEED HELP
+            رضاء العملاء
           </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-          </p>
+          رضاؤك هو نجاحنا. فريق دعم العملاء لدينا ملتزم بمساعدتك في كل خطوة، مضمونًا تجربة تسوق سلسة وممتعة         </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
