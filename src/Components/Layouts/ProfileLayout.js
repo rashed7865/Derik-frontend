@@ -26,9 +26,7 @@ export const ProfLayout = (props) => {
            {
                props.sidebar ? 
                <>
-                <div>
-                    <Navbar/>
-                </div>
+       
                 <div style = {{ marginLeft: '180px' }}> 
                 <b className = 'mb-0 pb-0'>Account</b>
                 <p className = 'mb-3'>{user.firstName} {user.lastName}</p>

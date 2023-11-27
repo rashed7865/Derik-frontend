@@ -17,6 +17,7 @@ import { AdminUpdateProduct } from './Pages/Admin/Products/UpdateProduct';
 import { Payment } from './Pages/Payment';
 import { DefaultComp } from './Pages/404';
 import { AllProducts } from './Pages/AllProducts/AllProducts';
+import { Home } from './Pages/Home/Home';
 import { Footer } from './Components/Footer/Footer';
 import { NotAuthorisedPage } from './Pages/403';
 import { Login } from './Pages/Auth/Login/Login';
@@ -37,11 +38,11 @@ const App = () => {
 
   return (
     <div>
-      <div style={{ minHeight: '95vh' }}>
+      <div  style={{ minHeight: '95vh' }}>
         <Navbar />
-        <div style={{ marginTop: "100px" }}>
           <Switch>
-            <Route exact path='/' component={AllProducts} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/products' component={AllProducts} />
             <Route exact path='/orders' component={Orders} />
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/profile/update/:id' component={EditProfile} />
@@ -69,7 +70,6 @@ const App = () => {
             <Route exact path='/no-permission' component={NotAuthorisedPage} />
             <Route component={DefaultComp} />
           </Switch>
-        </div>
       </div>
       <Footer />
     </div>

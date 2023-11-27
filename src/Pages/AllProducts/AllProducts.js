@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import './AllProducts.css'
+// import './AllProducts.css'
 import { ProductCard } from '../../Components/Products/ProductCard';
 import { Error } from '../../Components/Messages/messages';
 import { UserLayout } from '../../Components/Layouts/UserLayout';
@@ -14,7 +14,6 @@ export const AllProducts = () => {
     const [categories, setCategories] = useState([]);
     const [checkedValue, setCheckedValue] = useState("");
     const [mainProducts, setMainProducts] = useState([]);
-
     const searchHandler = (val) => {
         setProducts(mainProducts?.filter(product => product?.title?.toLowerCase().includes(val?.toLowerCase())));
     }
@@ -70,9 +69,7 @@ export const AllProducts = () => {
                         size="large"
                         onSearch={searchHandler}
                     />
-                    {/* <Input style={{ width: "100%", maxWidth: "300px" }} size='large' placeholder='Search here' onChange={(e) => setSearchText(e.target.value)} />
-                    <br />
-                    <Button type='primary' size='large' color='primary' className='mt-2 px-4' onClick={searchHandler}>Search</Button> */}
+                   
                 </div>
                 <div className='row main-row pt-0 gx-5'>
                     <div className='col-md-2 border'>
@@ -110,6 +107,6 @@ export const AllProducts = () => {
                     </div>
                 </div>
             </div>
-        </UserLayout>
+        </UserLayout> 
     )
 }
