@@ -5,6 +5,10 @@ import saving from './../../assets/images/saving-img.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import bannerImage from "./../../assets/images/slider-img.png";
 import lineImage from "./../../assets/images/line.png";
+
+
+
+
 export const Home = () => {
    
 
@@ -488,9 +492,13 @@ export const Home = () => {
               <i class="fa fa-envelope" aria-hidden="true"></i>
                           <span> rashedecomm728@gmail.com</span>
 
-                          <span > Rashed Almahila</ span>
-              
+                            
             </a>
+            <a href="">
+  <i class="fa custom-user-icon" aria-hidden="true"></i>
+  <span>Sponsored Rashed Almahila</span>
+</a>
+
             
           </div>
         </div>
