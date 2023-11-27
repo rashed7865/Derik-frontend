@@ -4,7 +4,6 @@ import gifts from './../../assets/images/gifts.png';
 import saving from './../../assets/images/saving-img.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import bannerImage from "./../../assets/images/slider-img.png";
-import next from " ./../../assets/images/p3.png";
 import lineImage from "./../../assets/images/line.png";
 export const Home = () => {
    
@@ -21,8 +20,8 @@ export const Home = () => {
                 <div class="row">
                   <div class="col-md-7">
                     <div class="detail-box">
-                      <h1 style={{color:'black'}}>
-                      مرحبًا بك في ديريك اون لاين شوب<br/>
+                      <h1 style={{color:'white'}}>
+                      مرحبًا بك في ديريك اون لاين شوب!<br/>
                       تجربة تسوق فريدة
                       </h1>
                       <p>
@@ -35,7 +34,7 @@ export const Home = () => {
                   </div>
                   <div class="col-md-5 ">
                     <div class="img-box">
-                      <img src={next} alt="" />
+                      <img src={bannerImage} alt="" />
                     </div>
                   </div>
                 </div>
@@ -48,7 +47,8 @@ export const Home = () => {
                     <div class="detail-box">
                       <h1>
                       عروض حصرية <br/>
-                                   
+                      
+              
                       </h1>
                       <p>
                       اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات.  </p>
@@ -75,7 +75,7 @@ export const Home = () => {
                       
                       </h1>
                       <p>
-                      تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء        </p>
+                      تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
                       <Link href="" >
                       اتصل بنا
                       </Link>
@@ -488,7 +488,7 @@ export const Home = () => {
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
                           <span> rashedecomm728@gmail.com</span>
-
+                          
                           <span> Rashed Almahila</span>
               
             </a>
