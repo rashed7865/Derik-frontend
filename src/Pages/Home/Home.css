@@ -44,8 +44,6 @@
 
 .all-products button {
     border: none;
-    /* background: rgb(243, 243, 243); */
-    /* padding: 0px; */
 }
 
 .all-products button:focus {
@@ -72,7 +70,6 @@
     height: 100%;
 }
 
-
 .all-products .sizes button {
     background: transparent;
     font-weight: bold;
@@ -81,7 +78,6 @@
 
 .all-products .sizes button:focus {
     background: #100F1D;
-    /* opacity: 0.2; */
 }
 
 .all-products .sizes button:focus span {
@@ -122,7 +118,8 @@
     display: block;
     position: absolute;
     top: 200px;
-    left: 16%;    z-index: 100;
+    left: 16%;
+    z-index: 100;
     background-color: rgb(243, 243, 243);
     padding: 19px;
     padding-left: 28px;
