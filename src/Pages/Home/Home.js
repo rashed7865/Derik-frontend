@@ -46,14 +46,14 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1>
-                        Welcome To Our <br/>
-                        Gift Shop
+                      عروض حصرية <br/>
+                      
+              
                       </h1>
                       <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                      </p>
+                      اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات.  </p>
                       <Link href="" >
-                        Contact Us
+                      اتصل بنا
                       </Link>
                     </div>
                   </div>
@@ -71,14 +71,13 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1>
-                        Welcome To Our <br/>
-                        Gift Shop
+                      تسوق بثقة<br/>
+                      
                       </h1>
                       <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                      </p>
+                      تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
                       <Link href="" >
-                        Contact Us
+                      اتصل بنا
                       </Link>
                     </div>
                   </div>
@@ -119,19 +118,19 @@ export const Home = () => {
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Best Savings on <br/>
-                new arrivals
+              آخر العروض <br/>
+              
               </h2>
             </div>
             <p>
-              Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.
+            اكتشف أحدث العروض والتخفيضات  ولا تفوت فرصة الشراء بأسعار مميزة
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-                Buy Now
+              اشتري الآن
               </a>
               <a href="#" class="btn2">
-                See More
+              شاهد المزيد
               </a>
             </div>
           </div>
@@ -145,7 +144,7 @@ export const Home = () => {
   <div class="container">
     <div class="heading_container heading_center">
       <h2 className='h2_heading'>
-        Why Shop With Us
+      لماذا تتسوق معنا
       </h2>
     </div>
     <div class="row">
@@ -240,10 +239,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-              Fast Delivery
+          توصيل سريع
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            استمتع بتوصيل سريع لطلباتك مباشرة إلى باب منزلك
             </p>
           </div>
         </div>
@@ -355,10 +354,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
             <h5 style={{color:'black'}}>
-              Free Shiping
+            ًالشحن مجانا
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            نحن نلتزم بتقديم منتجات عالية الجودة فقط
             </p>
           </div>
         </div>
@@ -376,10 +375,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-              Best Quality
+          جودة مضمونة
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            ل منتج يمر بفحص دقيق لضمان رضاك التام
             </p>
           </div>
         </div>
@@ -402,19 +401,19 @@ export const Home = () => {
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Gifts for your <br/>
-                loved ones
+              تشكيلة واسعة <br/>
+                
               </h2>
             </div>
             <p>
-              Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
+            اكتشف تشكيلتنا الواسعة من المنتجات التي تلبي جميع احتياجاتك. لدينا كل ما تحتاجه بفخر وأسعار تنافسية
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-                Buy Now
+              اشتري الآن
               </a>
               <a href="#" class="btn2">
-                See More
+              شاهد المزيد
               </a>
             </div>
           </div>
