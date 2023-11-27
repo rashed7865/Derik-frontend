@@ -112,12 +112,12 @@ export const Home = () => {
   <div class="box">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="img-box">
             <img src={saving} alt="" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
