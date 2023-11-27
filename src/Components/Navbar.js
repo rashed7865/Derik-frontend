@@ -7,6 +7,7 @@ import { isAuthenticated } from './Auth/auth';
 import { ShoppingCartOutlined, ProfileOutlined, DashboardFilled, UserOutlined } from '@ant-design/icons';
 import logo from "../assets/logo.png";
 import bannerImage from "../assets/images/slider-img.png";
+import next from " ./../../assets/images/p3.png";
 import lineImage from "../assets/images/line.png";
 
 
