@@ -21,14 +21,14 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1 style={{color:'white'}}>
-                        Welcome To Our <br/>
-                        Gift Shop
+                      مرحبًا بك في ديريك اون لاين شوب!<br/>
+                      تجربة تسوق فريدة
                       </h1>
                       <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
                       </p>
                       <Link href="" >
-                        Contact Us
+                       اتصل بنا
                       </Link>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ export const Home = () => {
         <div class="col-md-6 col-lg-3">
           <div class="info_form ">
             <h5>
-              Newsletter
+            اشترك في النشرة الإخبارية
             </h5>
             <form action="#">
               <input type="email" placeholder="Enter your email" />
@@ -475,7 +475,8 @@ export const Home = () => {
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-            CONTACT US
+          اتصل بنا
+            فريق خدمة العملاء لدينا جاهز لمساعدتك في أي وقت
           </h5>
           <div class="info_link-box">
             <a href="">
@@ -488,8 +489,8 @@ export const Home = () => {
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span> Rashed Almahila</span>
-              <span> rashedecomm728@gmail.com</span>
+                          <span> rashedecomm728@gmail.com</span>
+                          <span> Rashed Almahila</span>
               
             </a>
             
