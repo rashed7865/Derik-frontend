@@ -121,7 +121,7 @@ export const Navbar = () => {
                 <Link className="ant-dropdown-link" to={"/seller/products"}>
                   <DashboardFilled style={{ fontSize: '21px' }} />
                   <br />
-                  <span style={{ fontSize: '50px' }}>Dashboard</span>
+                  <span style={{ fontSize: '14px' }}>لوحة التحكم</span>
                 </Link>
               </li>
             }
@@ -131,7 +131,7 @@ export const Navbar = () => {
                 <Link className="ant-dropdown-link" to={"/admin/products"}>
                   <DashboardFilled style={{ fontSize: '21px' }} />
                   <br />
-                  <span style={{ fontSize: '14px' }}>لوحة القيادة</span>
+                  <span style={{ fontSize: '14px' }}>لوحة التحكم</span>
                 </Link>
               </li>
             }
