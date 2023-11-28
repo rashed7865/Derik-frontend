@@ -9,8 +9,8 @@ export const NotAuthorisedPage = () => {
             <Result
                 status="403"
                 title="403"
-                subTitle="Sorry, you are not authorized to access this page."
-                extra={<Link to = '/' className='btn btn-dark'>Back Home</Link>}
+                subTitle="عذرا، غير مسموح لك بالدخول إلى هذه الصفحة."
+                extra={<Link to = '/' className='btn btn-dark'>العودة إلى الرئيسية</Link>}
             />
         </UserLayout>
     )

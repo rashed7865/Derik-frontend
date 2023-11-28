@@ -96,8 +96,8 @@ export const Payment = (props) => {
   return (
     <div>
       <UserLayout navbar>
-        <div className='row payment' style={{ marginLeft: '100px' }}>
-          <div className='col-md-8 pr-4'>
+        <div className='row payment' style={{ marginLeft: '10px' }}>
+          <div className='col-md-8 pr-6'>
             <div style={{ width: '100%' }}>
               <div className='jumbotron jumbotron-fluid mt-4 border payment p-4'>
                 <div>
@@ -112,21 +112,22 @@ export const Payment = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='jumbotron jumbotron-fluid mt-4 border payment p-4'>
+              <div className='jumbotron jumbotron-fluid mt- border payment p-5'>
                 <div>
-                  <h4>Pay Cash On Delivery</h4>
-                  <div className='my-5'>
-                    <Button type='primary' className='w-100' onClick={() => transactionSuccess({})}>Place Order</Button>
+                  <h4>الدفع نقدا عند التسليم
+</h4>
+                  <div className='my-7'>
+                    <Button type='primary' className='w-100' onClick={() => transactionSuccess({})}>شراء والدفع نقدا</Button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className='col-md-4 mt-5 px-4' style={{ borderLeft: '1px solid #dddde6' }}>
-            <h6 className='text-muted'>PRICE DETAILS ({products?.length} Items)</h6>
+            <h6 className='text-muted'>تفاصيل السعر ({products?.length} Items)</h6>
             <div className='d-flex justify-content-between align-items-center'>
               <div className='my-2'>
-                <h6> Total Amount </h6>
+                <h6> المبلغ الإجمالي </h6>
               </div>
               <div className='mt-2' style={{ paddingLeft: '102px' }}>
                 <h6>{products?.reduce((a, b) => a + b.qty * b.price.toString(), 0)}$</h6>

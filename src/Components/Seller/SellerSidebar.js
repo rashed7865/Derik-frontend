@@ -21,7 +21,7 @@ export const SellerSidebar = () => {
                             <i className="fas fa-chart-pie"></i>
                         </div>
                         <div>
-                            <NavLink to='/seller/products'>Products</NavLink>
+                            <NavLink to='/seller/products'>منتجات</NavLink>
                         </div>
                     </div>
                     </Menu.Item>
@@ -31,7 +31,7 @@ export const SellerSidebar = () => {
                                 <i className="fas fa-shopping-cart"></i>
                             </div>
                             <div>
-                                <NavLink to='/seller/orders'> Order Management</NavLink>
+                                <NavLink to='/seller/orders'> إدارة الطلبات</NavLink>
                             </div>
                         </div>
                     </Menu.Item>
@@ -42,7 +42,7 @@ export const SellerSidebar = () => {
                             </div>
                             <div>
                                 <a href='/login' onClick={() => { logout(() => { }) }}>
-                                    Logout
+                                تسجيل خروج
                                 </a>
                             </div>
                         </div>

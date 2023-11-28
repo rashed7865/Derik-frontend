@@ -139,7 +139,7 @@ export const UpdateProductForm = (props) => {
                         <form onSubmit={submitHandler}>
                             <div className='d-flex justify-content-between'>
                                 <div>
-                                    <h4 className='mb-5'>Update Product</h4>
+                                    <h4 className='mb-5'>تحديث المنتج</h4>
                                 </div>
                                 <div>
                                     {

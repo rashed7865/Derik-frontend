@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer>
             <span>
-                Copyright © Dêrik-online-shop 2023
+                Copyright © Dêrik-online-shop 2023  Rashed Almahila
             </span>
         </footer>
     )

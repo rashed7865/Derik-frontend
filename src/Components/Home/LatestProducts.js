@@ -122,7 +122,7 @@ export const LatestProducts = () => {
       <div class="container">
         <div class="heading_container heading_center">
         <h2 className='h2_heading'>
-            Latest Products</h2>
+        أحدث المنتجات</h2>
         </div>
         <div class="row">
           {products.length > 0 &&
@@ -135,7 +135,7 @@ export const LatestProducts = () => {
             })}
         </div>
         <div class="btn-box">
-          <Link to="/products">View All Products</Link>
+          <Link to="/products">عرض جميع المنتجات</Link>
         </div>
       </div>
     </section>

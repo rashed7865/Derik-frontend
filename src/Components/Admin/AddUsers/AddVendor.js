@@ -54,21 +54,21 @@ export const AddVendor = (props) => {
             :
             <>
                 <div className='text-right mb-4'>
-                    <button className='btn btn-dark'>Add Vendor</button>
+                    <button className='btn btn-dark'>إضافة بائع</button>
                 </div>
                 <div className='auth'>
                     <div className="auth-inner-bubble-container">
-                        <h2>Create account</h2>
+                        <h2>إنشاء حساب</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
-                                <label>First Name</label>
+                                <label>الاسم الأول</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='firstName' type="text" className="form-control" placeholder="First Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Last Name</label>
+                                <label>اسم العائلة</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='lastName' type="text" className="form-control" placeholder="Last Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
@@ -96,33 +96,21 @@ export const AddVendor = (props) => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>City</label>
+                                <label>مدينة</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='city' type="text" className="form-control" placeholder="City" onChange={handleChange} aria-label="City" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>State</label>
+                                <label>العنوان</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='state' type="text" className="form-control" placeholder="State" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <div className='item'>
-                                <label>Country</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='country' type="text" className="form-control" placeholder="Country" onChange={handleChange} aria-label="Country" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <label>Zip Code</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='zipCode' type="text" className="form-control" placeholder="Zip Code" onChange={handleChange} aria-label="zipCode" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
+                           
+                          
                             <div className='item'>
                                 <label>Phone</label>
                                 <div className="input-group">
@@ -130,12 +118,12 @@ export const AddVendor = (props) => {
                                     <input name='phone' type="text" className="form-control" placeholder="Phone" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <button className='btn' type="submit">Signup</button>
+                            <button className='btn' type="submit">سجل عن طريق البريد الإلكتروني</button>
                         </form>
                         <div className='end-text'>
-                            <div>Already have an account?</div>
+                            <div>هل لديك حساب؟</div>
                             <Link to="/login">
-                                <b className='fw-bold'>Login</b>
+                                <b className='fw-bold'>تسجيل الدخول</b>
                             </Link>
                         </div>
                     </div>
