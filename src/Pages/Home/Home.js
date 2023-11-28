@@ -465,7 +465,7 @@ export const Home = () => {
             <form action="#">
               <input type="email" placeholder="Enter your email" />
               <button>
-                Subscribe
+              اشتراك
               </button>
             </form>
           </div>
@@ -497,10 +497,7 @@ export const Home = () => {
 
                             
             </a>
-            <a href="">
-  <i class="fa custom-user-icon" aria-hidden="true"></i>
-  <span>Sponsored Rashed Almahila</span>
-</a>
+ 
 
             
           </div>
