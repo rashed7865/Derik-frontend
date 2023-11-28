@@ -141,7 +141,7 @@ export const Navbar = () => {
                   <Link className="ant-dropdown-link" to="/profile">
                     <ProfileOutlined style={{ fontSize: '21px', }} />
                     <br />
-                    <span style={{ fontSize: '14px' }}>حساب تعريفي</span>
+                    <span style={{ fontSize: '14px' }}>حسابي </span>
                   </Link>
                 </li>
                 :
