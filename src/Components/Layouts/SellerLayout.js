@@ -13,7 +13,7 @@ export const SellerLayout = (props) => {
             <div className='col-md-10 bg-light'>
               <div className='admin-layout'>
                 <div className='bg-white border-bottom p-4 pb-2' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div><h5>لوحة التحكم </h5></div>
+                  <div><h5>Dashboard </h5></div>
                 </div>
               </div>
               <div className='px-0'>

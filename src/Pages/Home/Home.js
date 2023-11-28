@@ -1,14 +1,10 @@
 import React from 'react';
-import { أحدثالمنتجات } from '../../Components/Home/LatestProducts';
+import { LatestProducts } from '../../Components/Home/LatestProducts';
 import gifts from './../../assets/images/gifts.png';
 import saving from './../../assets/images/saving-img.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import bannerImage from "./../../assets/images/slider-img.png";
 import lineImage from "./../../assets/images/line.png";
-
-
-
-
 export const Home = () => {
    
 
@@ -25,14 +21,14 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1 style={{color:'white'}}>
-                      مرحبًا بك في ديريك اون لاين شوب!<br/>
-                      تجربة تسوق فريدة
+                        Welcome To Our <br/>
+                        Gift Shop
                       </h1>
                       <p>
-                      مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
                       </p>
                       <Link href="" >
-                       اتصل بنا
+                        Contact Us
                       </Link>
                     </div>
                   </div>
@@ -50,14 +46,14 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1>
-                      عروض حصرية <br/>
-                      
-              
+                        Welcome To Our <br/>
+                        Gift Shop
                       </h1>
                       <p>
-                      اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات.  </p>
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      </p>
                       <Link href="" >
-                      اتصل بنا
+                        Contact Us
                       </Link>
                     </div>
                   </div>
@@ -75,13 +71,14 @@ export const Home = () => {
                   <div class="col-md-7">
                     <div class="detail-box">
                       <h1>
-                      تسوق بثقة<br/>
-                      
+                        Welcome To Our <br/>
+                        Gift Shop
                       </h1>
                       <p>
-                      تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      </p>
                       <Link href="" >
-                      اتصل بنا
+                        Contact Us
                       </Link>
                     </div>
                   </div>
@@ -113,28 +110,28 @@ export const Home = () => {
   <div class="box">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="img-box">
             <img src={saving} alt="" />
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-              آخر العروض <br/>
-              
+                Best Savings on <br/>
+                new arrivals
               </h2>
             </div>
             <p>
-            اكتشف أحدث العروض والتخفيضات  ولا تفوت فرصة الشراء بأسعار مميزة
+              Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-              اشتري الآن
+                Buy Now
               </a>
               <a href="#" class="btn2">
-              شاهد المزيد
+                See More
               </a>
             </div>
           </div>
@@ -148,7 +145,7 @@ export const Home = () => {
   <div class="container">
     <div class="heading_container heading_center">
       <h2 className='h2_heading'>
-      لماذا تتسوق معنا
+        Why Shop With Us
       </h2>
     </div>
     <div class="row">
@@ -243,10 +240,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-          توصيل سريع
+              Fast Delivery
             </h5>
             <p>
-            استمتع بتوصيل سريع لطلباتك مباشرة إلى باب منزلك
+              variations of passages of Lorem Ipsum available
             </p>
           </div>
         </div>
@@ -358,10 +355,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
             <h5 style={{color:'black'}}>
-            ًالشحن مجانا
+              Free Shiping
             </h5>
             <p>
-            نحن نلتزم بتقديم منتجات عالية الجودة فقط
+              variations of passages of Lorem Ipsum available
             </p>
           </div>
         </div>
@@ -379,48 +376,45 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-          جودة مضمونة
+              Best Quality
             </h5>
             <p>
-            كل منتج يمر بفحص دقيق لضمان رضاك التام
+              variations of passages of Lorem Ipsum available
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 </section>
-
 <section class="gift_section layout_padding-bottom">
-  
   <div class="box ">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="img_container">
             <div class="img-box">
               <img src={gifts} alt="" />
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-7">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-              تشكيلة واسعة <br/>
-                
+                Gifts for your <br/>
+                loved ones
               </h2>
             </div>
             <p>
-            اكتشف تشكيلتنا الواسعة من المنتجات التي تلبي جميع احتياجاتك. لدينا كل ما تحتاجه بفخر وأسعار تنافسية
+              Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-              اشتري الآن
+                Buy Now
               </a>
               <a href="#" class="btn2">
-              شاهد المزيد
+                See More
               </a>
             </div>
           </div>
@@ -452,42 +446,42 @@ export const Home = () => {
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <h5>
-          رسالتنا
+            ABOUT US
           </h5>
           <p>
-          رسالتنا بسيطة: نقدم لك وجهة واحدة لجميع احتياجاتك التسوق عبر الإنترنت
-          . نسعى لجعل رحلتك في التسوق عبر الإنترنت ممتعة وسهلة وآمنة          </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+          </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="info_form ">
             <h5>
-            اشترك في النشرة الإخبارية
+              Newsletter
             </h5>
             <form action="#">
               <input type="email" placeholder="Enter your email" />
               <button>
-              اشتراك
+                Subscribe
               </button>
             </form>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-            رضاء العملاء
+            NEED HELP
           </h5>
           <p>
-          رضاؤك هو نجاحنا. فريق دعم العملاء لدينا ملتزم بمساعدتك في كل خطوة، مضمونًا تجربة تسوق سلسة وممتعة         </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+          </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-          اتصل بنا
-            فريق خدمة العملاء لدينا جاهز لمساعدتك في أي وقت
+            CONTACT US
           </h5>
           <div class="info_link-box">
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span> Gb road 123 london Uk </span>
-              </a>
+            </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>+963 999 229 437</span>
@@ -495,8 +489,8 @@ export const Home = () => {
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span> rashedecomm728@gmail.com</span>
-
-            </a>          </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

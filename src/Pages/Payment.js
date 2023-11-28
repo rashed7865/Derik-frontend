@@ -114,9 +114,9 @@ export const Payment = (props) => {
               </div>
               <div className='jumbotron jumbotron-fluid mt-4 border payment p-4'>
                 <div>
-                  <h4>الدفع نقدا عند التسليم</h4>
+                  <h4>Pay Cash On Delivery</h4>
                   <div className='my-5'>
-                    <Button type='primary' className='w-100' onClick={() => transactionSuccess({})}>اطلب</Button>
+                    <Button type='primary' className='w-100' onClick={() => transactionSuccess({})}>Place Order</Button>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export const Payment = (props) => {
             <h6 className='text-muted'>PRICE DETAILS ({products?.length} Items)</h6>
             <div className='d-flex justify-content-between align-items-center'>
               <div className='my-2'>
-                <h6> المبلغ الإجمالي </h6>
+                <h6> Total Amount </h6>
               </div>
               <div className='mt-2' style={{ paddingLeft: '102px' }}>
                 <h6>{products?.reduce((a, b) => a + b.qty * b.price.toString(), 0)}$</h6>

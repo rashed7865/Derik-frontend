@@ -1,30 +1,3 @@
-/* Für kleine Bildschirme */
-@media only screen and (max-width: 767px) {
-    .all-products .sizes button {
-        font-size: 14px;
-    }
-
-    .all-products .desc {
-        font-size: 18px;
-    }
-
-    /* Fügen Sie hier weitere Anpassungen für kleine Bildschirme hinzu */
-}
-
-/* Für mittlere Bildschirme */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .all-products .desc {
-        font-size: 20px;
-    }
-
-    /* Fügen Sie hier weitere Anpassungen für mittlere Bildschirme hinzu */
-}
-
-/* Für große Bildschirme */
-@media only screen and (min-width: 1200px) {
-    /* Hier können Sie bei Bedarf Anpassungen für große Bildschirme vornehmen */
-}
-
 .all-products {
     overflow-x: hidden;
 }
@@ -44,6 +17,8 @@
 
 .all-products button {
     border: none;
+    /* background: rgb(243, 243, 243); */
+    /* padding: 0px; */
 }
 
 .all-products button:focus {
@@ -57,7 +32,7 @@
 }
 
 .all-products .desc {
-    font: normal normal bold 1.375em/1.875em 'Red Hat Display', sans-serif;
+    font: normal normal bold 22px/30px 'Red Hat Display', sans-serif;
     letter-spacing: 0px;
     color: #100F1D;
     opacity: 1;
@@ -70,6 +45,7 @@
     height: 100%;
 }
 
+
 .all-products .sizes button {
     background: transparent;
     font-weight: bold;
@@ -78,6 +54,7 @@
 
 .all-products .sizes button:focus {
     background: #100F1D;
+    /* opacity: 0.2; */
 }
 
 .all-products .sizes button:focus span {
@@ -119,6 +96,7 @@
     position: absolute;
     top: 200px;
     left: 16%;
+    ;
     z-index: 100;
     background-color: rgb(243, 243, 243);
     padding: 19px;

@@ -28,7 +28,7 @@ export const ProfLayout = (props) => {
                <>
        
                 <div style = {{ marginLeft: '180px' }}> 
-                <b className = 'mb-0 pb-0'>حسابي</b>
+                <b className = 'mb-0 pb-0'>Account</b>
                 <p className = 'mb-3'>{user.firstName} {user.lastName}</p>
                 </div> 
                <div className = 'row' style = {{borderTop: '1px solid #d4d5d9', marginLeft: '180px', marginRight: '200px'}}>

@@ -160,10 +160,10 @@ export const ProductCart = (props) => {
                       <div className='' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                           <div className='text-muted text-center'>
-                            <h4 className='mb-1' style={{ color: '#424553', fontSize: '40px' }}>Hey It feels so light!</h4>
-                            <p>لا يوجد شيء في حقيبتك. دعونا نضيف بعض العناصر🙂🙂</p>
+                            <h4 className='mb-1' style={{ color: '#424553', fontSize: '20px' }}>Hey It feels so light!</h4>
+                            <p>There is nothing in your bag. Let's add some items.</p>
                           </div>
-                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '20px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>أضف</a>
+                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '14px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>Add</a>
                         </div>
                       </div>
                     </UserLayout>
@@ -172,7 +172,7 @@ export const ProductCart = (props) => {
                       <div className='row'>
                         <div className='col-md-8 pr-4'>
                           <div style={{ background: '#e5f6f2' }}>
-                            <h6 className='py-2 pl-2'>لقد حصلت عليه {products?.length} العناصر{products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
+                            <h6 className='py-2 pl-2'>You have got {products?.length} Item(s) for {products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
                             {
                               products?.map(prod => {
                                 return (
@@ -187,7 +187,7 @@ export const ProductCart = (props) => {
                                         {/* <p className='text-muted mt-0 pt-0'>Sold By: Saeed Ahmed</p> */}
                                         <a onClick={() => getProductById(prod?.productId)}>
                                           <span className='font-weight-bold'>
-                                            <span>الكمية: {prod.qty}</span>
+                                            <span>Qty: {prod.qty}</span>
                                             <CaretDownOutlined />
                                           </span>
                                         </a>
@@ -195,7 +195,7 @@ export const ProductCart = (props) => {
                                     </div>
                                     <div className='col-3'><span className='fw-bold'>{prod.price * prod.qty}$</span></div>
                                     <div className=''>
-                                      <button className='border border-bottom w-100 mt-2' style={{ border: 'none', background: 'white', height: '40px', fontWeight: 'bolder', color: '#696b79' }} onClick={() => removeHandler(prod.productId)}>إزالة</button>
+                                      <button className='border border-bottom w-100 mt-2' style={{ border: 'none', background: 'white', height: '40px', fontWeight: 'bolder', color: '#696b79' }} onClick={() => removeHandler(prod.productId)}>Remove</button>
                                     </div>
                                   </div>
                                 )
@@ -206,7 +206,7 @@ export const ProductCart = (props) => {
                         </div>
 
                         <Modal title='Select Amount' footer={false} width={380} visible={isQtyModalVisible} onOk={handleQtyOk} onCancel={handleQtyCancel}>
-                          <h4> حددالكمية </h4>
+                          <h4>Select Amount</h4>
                           <InputNumber min={1} max={100000} defaultValue={product?.qty} value={qtyToShop} onChange={(value) => setQtyToShop(value)} />
                           <div className='text-center mt-2'>
                             <Button onClick={() => saveQtyToDb(product?.productId)}>Save</Button>
@@ -214,10 +214,10 @@ export const ProductCart = (props) => {
                         </Modal>
 
                         <div className='col-md-4 mt-4'>
-                          <h6>تفاصيل السعر ({products?.length} Items)</h6>
+                          <h6>Price Details ({products?.length} Items)</h6>
                           <div className='d-flex justify-content-between align-items-center'>
                             <div className='my-2'>
-                              <h6> المبلغ الإجمالي</h6>
+                              <h6> Total Amount </h6>
                             </div>
                             <div className='mt-2' style={{ paddingLeft: '102px' }}>
                               <h6>{products?.reduce((a, b) => a + b?.qty * b?.price?.toString(), 0)}$</h6>
@@ -232,7 +232,7 @@ export const ProductCart = (props) => {
                             </div>
                           </div> */}
                           <div className='w-100 mt-4'>
-                            <button onClick={() => isAuthenticated() && moveToAddress()} className='btn my-2 w-100' style={{ background: '#2a3e53', color: 'white' }}>طلب</button>
+                            <button onClick={() => isAuthenticated() && moveToAddress()} className='btn my-2 w-100' style={{ background: '#2a3e53', color: 'white' }}>Place Order</button>
                           </div>
                         </div>
                       </div>

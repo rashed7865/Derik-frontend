@@ -77,7 +77,7 @@ export const Product = (props) => {
                 })
             }
         } else {
-            Error("الرجاء تسجيل الدخول للإضافة إلى سلة التسوق");
+            Error("Please login to add to cart");
         }
     }
 
@@ -115,19 +115,19 @@ export const Product = (props) => {
                                         <span>{product.price}$</span>
                                     </h5>
                                     <h6 style={{ color: '#03a685' }} className='font-weight-bold'>
-                                    استغل العرض الحالي
+                                        Inclusive of all taxes
                                     </h6>
 
                                     <div className='mt-4'>
-                                        <h5>أضف <span>كمية</span></h5>
+                                        <h5>Add <span>Quantity</span></h5>
                                         <InputNumber min={1} max={100000} defaultValue={1} onChange={(value) => setQtyToShop(value)} />
                                         {
-                                            <p className='mt-2'>{product.qty <= 1 && <span className='text-danger fw-bolder'>المنتج على وشك النفاد من المخزون!</span>}</p>
+                                            <p className='mt-2'>{product.qty <= 1 && <span className='text-danger fw-bolder'>Product is almost out of stock!</span>}</p>
                                         }
                                     </div>
                                     <div className='product-btn my-4'>
                                         <Button onClick={handleCart} size='large' icon={<ShoppingCartOutlined style={{ fontSize: '26px' }} />}>
-                                        أضف الى سلة المشتريات
+                                            Add to Bag
                                         </Button>
                                     </div>
                                     <div>
