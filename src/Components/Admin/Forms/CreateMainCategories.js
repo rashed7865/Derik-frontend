@@ -65,7 +65,7 @@ export const CreateMainCategories = (props) => {
                   size="large"
                   className="btn btn-outline-dark w-25"
                 >
-                  Submit
+                  إرسال
                 </button>
               </div>
             </form>
