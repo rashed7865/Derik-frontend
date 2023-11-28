@@ -480,7 +480,7 @@ export const Home = () => {
           <div class="info_link-box">
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span> Gb road 123 london Uk </span>
+              <span>ديريك السوق المركزي</span>
               </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
