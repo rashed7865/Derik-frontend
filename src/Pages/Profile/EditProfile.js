@@ -15,13 +15,12 @@ export const EditProfile = () => {
         lastName: '',
         phone: '',
         city: '',
-        state: '',
-        country: '',
+        addres: '',
         email: '',
-        zipCode: '',
+      
     });
 
-    const { firstName, lastName, phone, country, city, state, email, zipCode } = user;
+    const { firstName, lastName, phone, addres, city,  email } = user;
 
     const handleProfileChnage = (e) => {
         setUser({
@@ -81,46 +80,37 @@ export const EditProfile = () => {
                                     <div>
                                         <div className="floating-label-group">
                                             <input onChange={handleProfileChnage} value={firstName} name='firstName' type="text" id="firstName" className="form-control" autofocus required />
-                                            <label className="floating-label">First Name</label>
+                                            <label className="floating-label">الاسم الأول</label>
                                         </div>
                                         <div className="floating-label-group">
                                             <input onChange={handleProfileChnage} value={lastName} name='lastName' type="text" id="lastName" className="form-control" autofocus required />
-                                            <label className="floating-label">Last Name</label>
+                                            <label className="floating-label">اسم العائلة</label>
                                         </div>
                                     </div>
                                     <div className="floating-label-group">
                                         <input onChange={handleProfileChnage} value={email} name='email' type="email" id="Email" className="form-control" autofocus required />
-                                        <label className="floating-label">Email</label>
+                                        <label className="floating-label">Email بريد إلكتروني</label>
                                     </div>
                                     <div className="floating-label-group">
                                         <input onChange={handleProfileChnage} onInput={(e) => e.target.value = e.target.value.slice(0, 11)} value={phone} name='phone' type="number" id="phone" className="form-control" autofocus required />
-                                        <label className="floating-label">Phone</label>
+                                        <label className="floating-label">هاتف</label>
                                     </div>
                                     <div className="floating-label-group">
                                         <input onChange={handleProfileChnage} value={city} name='city' type="text" id="City" className="form-control" autofocus required />
-                                        <label className="floating-label">City</label>
+                                        <label className="floating-label">المدينة</label>
                                     </div>
                                     <div className="floating-label-group">
-                                        <input onChange={handleProfileChnage} value={state} name='state' type="text" id="State" className="form-control" autofocus required />
-                                        <label className="floating-label">State</label>
+                                        <input onChange={handleProfileChnage} value={city} name='city' type="text" id="addres" className="form-control" autofocus required />
+                                        <label className="floating-label">تفاصيل العنوان</label>
+                                    </div>                     
                                     </div>
-                                    <div className="floating-label-group">
-                                        <input onChange={handleProfileChnage} value={zipCode} name='zipCode' type="text" className="form-control" autofocus required />
-                                        <label className="floating-label">Postal Code</label>
-                                    </div>
-                                    <div className="floating-label-group">
-                                        <input onChange={handleProfileChnage} value={country} name='country' type="text" id="country" className="form-control" autofocus required />
-                                        <label className="floating-label">Country</label>
-                                    </div>
-
-                                </div>
 
                             </div>
                             <div className='px-5'>
-                                <button className='btn submit-btn' type='submit'>Save Details</button>
+                                <button className='btn submit-btn' type='submit'>حفظ التفاصيل</button>
                             </div>
                             <div className='px-5 my-4'>
-                                <Link to='/profile' className='btn submit-btn bg-white border-secondary text-dark font-weight-bolder'>Cancel</Link>
+                                <Link to='/profile' className='btn submit-btn bg-white border-secondary text-dark font-weight-bolder'>الغاء</Link>
                             </div>
                         </form>
                     </div>
