@@ -45,8 +45,8 @@ export const Login = (props) => {
     <>
       <div className='auth'>
         <div className="auth-inner-bubble-container">
-          <h2>Login</h2>
-          <p>Login with email and password</p>
+          <h2>تسجيل الدخول</h2>
+          <p>تسجيل الدخول باستخدام البريد الإلكتروني وكلمة المرور</p>
           {
             loading
               ?
@@ -54,27 +54,35 @@ export const Login = (props) => {
               :
               <form onSubmit={submitHandler}>
                 <div className='item'>
-                  <label>Email</label>
+                  <label>Email البريد الإلكتروني</label>
                   <div className="input-group">
                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                     <input required name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                   </div>
                 </div>
                 <div className='item'>
-                  <label>Password</label>
+                  <label>Password كلمة المرور</label>
                   <div className="input-group">
                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
                     <input required name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                   </div>
                 </div>
-                <button className='btn' type="submit">Login</button>
+                <button className='btn' type="submit">تسجيل الدخول
+</button>
               </form>
           }
+             
+
+              <div className='not-have-account'>
+        ليس لديك حساب؟
+      </div>
+
+
+      <Link to="/signup">
+        <button className='btn' type="submit">إنشاء حساب</button>
+      </Link>
           <div className='end-text'>
-            <div>Don't have an account?</div>
-            <Link to="/signup">
-              <b className='fw-bold'>Register</b>
-            </Link>
+        
           </div>
         </div>
       </div>

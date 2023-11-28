@@ -58,7 +58,7 @@ export const AddVendor = (props) => {
                 </div>
                 <div className='auth'>
                     <div className="auth-inner-bubble-container">
-                        <h2>Create account</h2>
+                        <h2>إنشاء حساب</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
                                 <label>First Name</label>
