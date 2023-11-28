@@ -17,7 +17,7 @@ export const ProductCard = ({ product }) => {
                     {product.title}
                     </h6>
                     <h6>
-                      Price
+                      السعر
                       <span>
                         ${product.price}
                       </span>

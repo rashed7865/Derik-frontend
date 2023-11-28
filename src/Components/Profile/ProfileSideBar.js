@@ -9,22 +9,22 @@ export const ProfileSideBar = () => {
         <div className='profile-sidebar' style={{ borderRight: '1px solid #d4d5d9', paddingRight: '23px' }}>
             <div>
                 <div className='prof-div'>
-                    <p>Orders</p>
-                    <NavLink activeClassName='profile-sidebar-links' to='/orders'>Orders</NavLink>
+                    <p>الطلبات</p>
+                    <NavLink activeClassName='profile-sidebar-links' to='/orders'>الطلبات</NavLink>
                     {/* <div className='pt-2'>
                         <NavLink activeClassName='profile-sidebar-links' to='/completed-orders'>Completed</NavLink>
                     </div> */}
                 </div>
                 <div className='prof-div'>
-                    <p>Profile</p>
+                    <p>حسابي</p>
                     <div>
-                        <NavLink activeClassName='profile-sidebar-links' to='/profile'>Profile</NavLink>
+                        <NavLink activeClassName='profile-sidebar-links' to='/profile'>حسابي</NavLink>
                     </div>
                 </div>
                 <div className='prof-div'>
-                    <p>Logout</p>
+                    <p>تسجيل الخروج</p>
                     <div>
-                        <a href='/login' onClick={() => { logout(() => { }) }}>Logout</a>
+                        <a href='/login' onClick={() => { logout(() => { }) }}>تسجيل الخروج</a>
                     </div>
                 </div>
             </div>
