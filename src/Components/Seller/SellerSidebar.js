@@ -42,7 +42,7 @@ export const SellerSidebar = () => {
                             </div>
                             <div>
                                 <a href='/login' onClick={() => { logout(() => { }) }}>
-                                    Logout
+                                    تسجيل خروج
                                 </a>
                             </div>
                         </div>
