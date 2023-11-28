@@ -9,129 +9,128 @@ export const Home = () => {
    
 
 
-    return (
-        <>
-            <section class="slider_section">
-      <div class="slider_container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-7">
-                    <div class="detail-box">
-                      <h1 style={{color:'white'}}>
-                        Welcome To Our <br/>
-                        Gift Shop
-                      </h1>
-                      <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                      </p>
-                      <Link href="" >
-                        Contact Us
-                      </Link>
-                    </div>
-                  </div>
-                  <div class="col-md-5 ">
-                    <div class="img-box">
-                      <img src={bannerImage} alt="" />
-                    </div>
-                  </div>
+  return (
+    <>
+        <section class="slider_section">
+  <div class="slider_container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-box">
+                  <h1 style={{color:'white'}}>
+                  مرحبًا بك في ديريك اون لاين شوب!<br/>
+                  تجربة تسوق فريدة
+                  </h1>
+                  <p>
+                  مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
+                  </p>
+                  <Link href="" >
+                   اتصل بنا
+                  </Link>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-7">
-                    <div class="detail-box">
-                      <h1>
-                        Welcome To Our <br/>
-                        Gift Shop
-                      </h1>
-                      <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                      </p>
-                      <Link href="" >
-                        Contact Us
-                      </Link>
-                    </div>
-                  </div>
-                  <div class="col-md-5 ">
-                    <div class="img-box">
-                      <img src={bannerImage} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-7">
-                    <div class="detail-box">
-                      <h1>
-                        Welcome To Our <br/>
-                        Gift Shop
-                      </h1>
-                      <p>
-                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
-                      </p>
-                      <Link href="" >
-                        Contact Us
-                      </Link>
-                    </div>
-                  </div>
-                  <div class="col-md-5 ">
-                    <div class="img-box">
-                      <img src={bannerImage} alt="" />
-                    </div>
-                  </div>
+              <div class="col-md-5 ">
+                <div class="img-box">
+                  <img src={bannerImage} alt="" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel_btn-box">
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <i class="fa fa-arrow-left" aria-hidden="true"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <img src={lineImage} alt="" />
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              <span class="sr-only">Next</span>
-            </a>
+        </div>
+        <div class="carousel-item ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-box">
+                  <h1>
+                  عروض حصرية <br/>
+                  
+          
+                  </h1>
+                  <p>
+                  اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات.  </p>
+                  <Link href="" >
+                  اتصل بنا
+                  </Link>
+                </div>
+              </div>
+              <div class="col-md-5 ">
+                <div class="img-box">
+                  <img src={bannerImage} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-box">
+                  <h1>
+                  تسوق بثقة<br/>
+                  
+                  </h1>
+                  <p>
+                  تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
+                  <Link href="" >
+                  اتصل بنا
+                  </Link>
+                </div>
+              </div>
+              <div class="col-md-5 ">
+                <div class="img-box">
+                  <img src={bannerImage} alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="carousel_btn-box">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <img src={lineImage} alt="" />
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
       <LatestProducts />
-<section class="saving_section ">
+      <section class="saving_section ">
   <div class="box">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="img-box">
             <img src={saving} alt="" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Best Savings on <br/>
-                new arrivals
+              آخر العروض <br/>
+              
               </h2>
             </div>
             <p>
-              Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.
+            اكتشف أحدث العروض والتخفيضات  ولا تفوت فرصة الشراء بأسعار مميزة
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-                Buy Now
+              اشتري الآن
               </a>
               <a href="#" class="btn2">
-                See More
+              شاهد المزيد
               </a>
             </div>
           </div>
@@ -145,7 +144,7 @@ export const Home = () => {
   <div class="container">
     <div class="heading_container heading_center">
       <h2 className='h2_heading'>
-        Why Shop With Us
+      لماذا تتسوق معنا
       </h2>
     </div>
     <div class="row">
@@ -240,10 +239,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-              Fast Delivery
+          توصيل سريع
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            استمتع بتوصيل سريع لطلباتك مباشرة إلى باب منزلك
             </p>
           </div>
         </div>
@@ -352,13 +351,13 @@ export const Home = () => {
               <g>
               </g>
             </svg>
-          </div>
+            </div>
           <div class="detail-box">
             <h5 style={{color:'black'}}>
-              Free Shiping
+            ًالشحن مجانا
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            نحن نلتزم بتقديم منتجات عالية الجودة فقط
             </p>
           </div>
         </div>
@@ -376,10 +375,10 @@ export const Home = () => {
           </div>
           <div class="detail-box">
           <h5 style={{color:'black'}}>
-              Best Quality
+          جودة مضمونة
             </h5>
             <p>
-              variations of passages of Lorem Ipsum available
+            كل منتج يمر بفحص دقيق لضمان رضاك التام
             </p>
           </div>
         </div>
@@ -388,33 +387,34 @@ export const Home = () => {
   </div>
 </section>
 <section class="gift_section layout_padding-bottom">
+  
   <div class="box ">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-4">
           <div class="img_container">
             <div class="img-box">
               <img src={gifts} alt="" />
             </div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-3">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Gifts for your <br/>
-                loved ones
+              تشكيلة واسعة <br/>
+                
               </h2>
             </div>
             <p>
-              Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
+            اكتشف تشكيلتنا الواسعة من المنتجات التي تلبي جميع احتياجاتك. لدينا كل ما تحتاجه بفخر وأسعار تنافسية
             </p>
             <div class="btn-box">
               <a href="#" class="btn1">
-                Buy Now
+              اشتري الآن
               </a>
               <a href="#" class="btn2">
-                See More
+              شاهد المزيد
               </a>
             </div>
           </div>
@@ -446,42 +446,42 @@ export const Home = () => {
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <h5>
-            ABOUT US
+          رسالتنا
           </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-          </p>
+          رسالتنا بسيطة: نقدم لك وجهة واحدة لجميع احتياجاتك التسوق عبر الإنترنت
+          . نسعى لجعل رحلتك في التسوق عبر الإنترنت ممتعة وسهلة وآمنة          </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="info_form ">
             <h5>
-              Newsletter
+            اشترك في النشرة الإخبارية
             </h5>
             <form action="#">
               <input type="email" placeholder="Enter your email" />
               <button>
-                Subscribe
+              اشتراك
               </button>
             </form>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-            NEED HELP
+            رضاء العملاء
           </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-          </p>
+          رضاؤك هو نجاحنا. فريق دعم العملاء لدينا ملتزم بمساعدتك في كل خطوة، مضمونًا تجربة تسوق سلسة وممتعة         </p>
         </div>
         <div class="col-md-6 col-lg-3">
           <h5>
-            CONTACT US
+          اتصل بنا
+            فريق خدمة العملاء لدينا جاهز لمساعدتك في أي وقت
           </h5>
           <div class="info_link-box">
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span> Gb road 123 london Uk </span>
-            </a>
+              </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>+963 999 229 437</span>
@@ -489,8 +489,8 @@ export const Home = () => {
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span> rashedecomm728@gmail.com</span>
-            </a>
-          </div>
+
+            </a>          </div>
         </div>
       </div>
     </div>
@@ -501,3 +501,4 @@ export const Home = () => {
       
     )
 }
+

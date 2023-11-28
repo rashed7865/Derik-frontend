@@ -209,7 +209,7 @@ export const ProductCart = (props) => {
                           <h4> حددالكمية </h4>
                           <InputNumber min={1} max={100000} defaultValue={product?.qty} value={qtyToShop} onChange={(value) => setQtyToShop(value)} />
                           <div className='text-center mt-2'>
-                            <Button onClick={() => saveQtyToDb(product?.productId)}>Save</Button>
+                            <Button onClick={() => saveQtyToDb(product?.productId)}>حفظ</Button>
                           </div>
                         </Modal>
 
