@@ -51,13 +51,13 @@ export const OrdersManagement = () => {
                             onChange={(val) => setSort(val)}
                             className='mb-3'
                         >
-                            <Option value={"6"}>All</Option>
-                            <Option value={"1"}>Pending</Option>
-                            <Option value={"2"}>Confirmed</Option>
-                            <Option value={"3"}>Prepared</Option>
-                            <Option value={"4"}>Delivered</Option>
-                            <Option value={"5"}>Completed</Option>
-                            <Option value={"0"}>Cancelled</Option>
+                            <Option value={"6"}>الجميع</Option>
+                            <Option value={"1"}>قيد الانتظار</Option>
+                            <Option value={"2"}>مؤكد</Option>
+                            <Option value={"3"}>مؤكد</Option>
+                            <Option value={"4"}>تم التوصيل</Option>
+                            <Option value={"5"}>مكتمل</Option>
+                            <Option value={"0"}>تم إلغاؤها</Option>
                         </Select>
                         <Order orders={sort === "6" ? orders : orders?.filter(order => order?.status === sort)} />
                     </TabPane>

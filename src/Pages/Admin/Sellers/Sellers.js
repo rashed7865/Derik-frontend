@@ -60,19 +60,19 @@ export const Sellers = () => {
         <div className='my-4'>
           <Input size='large' placeholder='Search here' onChange={(e) => setSearchText(e.target.value)} />
           <br />
-          <Button size='large' className='mt-4' onClick={searchHandler}>Search</Button>
+          <Button size='large' className='mt-4' onClick={searchHandler}>بحث</Button>
         </div>
         <div className='table-container'>
           <table className="table table-borderless">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Zip Code</th>
-                <th scope="col">Actions</th>
+                <th scope="col">الاسم الأول</th>
+                <th scope="col">اسم العائلة</th>
+                <th scope="col">بريد إلكتروني</th>
+                <th scope="col">رقم الهاتف</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">أجراءات</th>
               </tr>
             </thead>
             <tbody>

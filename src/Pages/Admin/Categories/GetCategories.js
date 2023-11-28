@@ -60,8 +60,8 @@ export const GetCategories = () => {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Categories</th>
-                <th scope="col">Actions</th>
+                <th scope="col">فئات</th>
+                <th scope="col">أجراءات</th>
               </tr>
             </thead>
             <tbody>

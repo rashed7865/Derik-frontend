@@ -75,7 +75,7 @@ export const AllProducts = () => {
                     <div className='col-md-2 border'>
                         <div className='px-3'>
                             <div className='px-3'>
-                                <Checkbox checked={checkedValue === "all"} onChange={() => { setCheckedValue("all"); getAllProducts() }}>All Categories</Checkbox>
+                                <Checkbox checked={checkedValue === "all"} onChange={() => { setCheckedValue("all"); getAllProducts() }}>جميع الفئات</Checkbox>
                             </div>
 
                             {

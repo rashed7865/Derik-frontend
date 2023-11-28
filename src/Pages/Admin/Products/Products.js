@@ -37,12 +37,12 @@ export const AdminProducts = () => {
     return (
         <Layout sidebar>
             <div className='d-flex justify-content-end mb-2 py-4'>
-                <Link to='/admin/create-products' className='btn px-4' style={{ background: '#364c64', color: 'white', borderRadius: '23px' }}>Create Product</Link>
+                <Link to='/admin/create-products' className='btn px-4' style={{ background: '#364c64', color: 'white', borderRadius: '23px' }}>إنشاء المنتج</Link>
             </div>
             <div className='my-4'>
                 <Input size='large' placeholder='Search here' onChange={(e) => setSearchText(e.target.value)} />
                 <br />
-                <Button size='large' className='mt-4' onClick={searchHandler}>Search</Button>
+                <Button size='large' className='mt-4' onClick={searchHandler}>بحث</Button>
             </div>
             <Tabs defaultActiveKey="1">
                 <TabPane tab="All" key="1">
