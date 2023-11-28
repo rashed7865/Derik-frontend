@@ -116,7 +116,7 @@ export const CreateProductForm = () => {
                         <form onSubmit={submitHandler}>
                             <div className='d-flex justify-content-between'>
                                 <div>
-                                    <h4 className='mb-5'>Create a Product</h4>
+                                    <h4 className='mb-5'>إنشاء منتج</h4>
                                 </div>
                                 <div>
                                     {

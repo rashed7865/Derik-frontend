@@ -113,7 +113,7 @@ export const UpdateSellers = ({ Seller, updateFunction }) => {
                   size="large"
                   className="btn btn-outline-dark w-25"
                 >
-                  Submit
+                  تقديم
                 </button>
               </div>
             </form>

@@ -64,7 +64,7 @@ export const UserDrawer = ({ update }) => {
     return (
         <>
             <button className='text-white p-2' onClick={showDrawer}>
-                <UserAddOutlined /> Add Users
+                <UserAddOutlined /> إضافة مستخدمين
             </button>
             <Drawer
                 width={640}
@@ -76,71 +76,60 @@ export const UserDrawer = ({ update }) => {
             >
                 <div className='¥'>
                     <div className="auth-inner-bubble-container">
-                        <h2 className='text-center'>Add User</h2>
+                        <h2 className='text-center'>إضافة مستخدمين</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
-                                <label>First Name</label>
+                                <label>الاسم الأول</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='firstName' type="text" className="form-control" placeholder="First Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Last Name</label>
+                                <label>اسم العائلة</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='lastName' type="text" className="form-control" placeholder="Last Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Email</label>
+                                <label>بريد إلكتروني</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Password</label>
+                                <label>كلمة المرور</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
                                     <input name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Retype Password</label>
+                                <label>أعد إدخال كلمة السر</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
                                     <input name='confirm' type="password" className="form-control" placeholder="Retype Password" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>City</label>
+                                <label>مدينة</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input name='city' type="text" className="form-control" placeholder="City" onChange={handleChange} aria-label="City" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>State</label>
+                                <label>العنوان الكامل</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='state' type="text" className="form-control" placeholder="State" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
+                                    <input name='state' type="text" className="form-control" placeholder="الرجاء اداخل العنوان الصحيح" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <div className='item'>
-                                <label>Country</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='country' type="text" className="form-control" placeholder="Country" onChange={handleChange} aria-label="Country" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <label>Zip Code</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='zipCode' type="text" className="form-control" placeholder="Zip Code" onChange={handleChange} aria-label="zipCode" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
+                           
+                         
+                           
                             <div className='item'>
                                 <label>Phone</label>
                                 <div className="input-group">
@@ -148,7 +137,7 @@ export const UserDrawer = ({ update }) => {
                                     <input name='phone' type="text" className="form-control" placeholder="Phone" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <button className='btn btn-dark w-100 mt-4' type="submit">Add</button>
+                            <button className='btn btn-dark w-100 mt-4' type="submit">أضف</button>
                         </form>
                     </div>
                 </div>

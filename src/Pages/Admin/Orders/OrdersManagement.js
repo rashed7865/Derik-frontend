@@ -64,10 +64,10 @@ export const OrdersManagement = () => {
                     <TabPane tab="Active" key="2">
                         <Order orders={orders?.filter(order => order?.status !== "5" && order?.status !== "0")} />
                     </TabPane>
-                    <TabPane tab="Completed" key="3">
+                    <TabPane tab="مكتمل" key="3">
                         <Order orders={orders?.filter(order => order?.status === "5")} status={"5"} />
                     </TabPane>
-                    <TabPane tab="Cancelled" key="4">
+                    <TabPane tab="تم إلغاؤها" key="4">
                         <Order orders={orders?.filter(order => order?.status === "0")} status={"0"} />
                     </TabPane>
                 </Tabs>

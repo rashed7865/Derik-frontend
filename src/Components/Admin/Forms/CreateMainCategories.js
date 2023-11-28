@@ -42,7 +42,7 @@ export const CreateMainCategories = (props) => {
 
   return (
     <div>
-      <button className='btn px-4 submit-btn btn-outline-dark rounded-pill' onClick={showModal}>Create Category</button>
+      <button className='btn px-4 submit-btn btn-outline-dark rounded-pill' onClick={showModal}>إنشاء فئة</button>
       <Modal title="New Category" footer={false} visible={isModalVisible} onCancel={handleCancel}>
         {
           loading ?

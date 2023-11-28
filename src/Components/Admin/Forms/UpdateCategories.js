@@ -79,7 +79,7 @@ export const UpdateCategories = (props) => {
                   size="large"
                   className="btn btn-outline-dark w-25"
                 >
-                  Submit
+                  تقديم
                 </button>
               </div>
             </form>
