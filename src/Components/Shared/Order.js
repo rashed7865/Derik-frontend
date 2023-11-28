@@ -73,7 +73,7 @@ export const Order = (props) => {
 
     return (
         <div>
-            <div>{props.orders?.length} orders</div>
+            <div>{props.orders?.length} طلبات</div>
             {
                 props.orders && props.orders.length > 0 && props.orders.map((order, index) => {
                     return (
@@ -82,20 +82,20 @@ export const Order = (props) => {
                                 <tbody>
                                     <tr className='bg-secondary text-white'>
                                         <th>
-                                            Order #{index + 1}
+                                        طلبات #{index + 1}
 
                                         </th>
                                         <th>
-                                            Order Id : {order?._id}
+                                        رقم الطلب  : {order?._id}
                                         </th>
                                         <th>
-                                            Total Price : {order?.totalPrice}$
+                                        السعر الكلي : {order?.totalPrice}$
                                         </th>
                                         <th>
                                             <button className='text-white' onClick={() => { showModal(); setUser(order?.user); setData(order?.data) }}>Customer</button>
                                         </th>
                                         <th>
-                                            <div className='text-white border p-1'>Seller:  {order?.seller?.firstName} {order?.seller?.lastName}</div>
+                                            <div className='text-white border p-1'>تاجر:  {order?.seller?.firstName} {order?.seller?.lastName}</div>
                                         </th>
                                         <th>
                                             <span>Status : &nbsp;
@@ -114,11 +114,11 @@ export const Order = (props) => {
                                                     <div className='d-flex align-items-center'>
                                                         <div>
                                                             <Select style={{ width: "100px" }} defaultValue={order?.status} onChange={handleChange}>
-                                                                <Option value={1}>Just Placed</Option>
-                                                                <Option value={2}>Confirmed</Option>
+                                                                <Option value={1}>وضعت للتو</Option>
+                                                                <Option value={2}>مؤكد</Option>
                                                                 <Option value={3}>Prepared</Option>
-                                                                <Option value={4}>Delivered</Option>
-                                                                <Option value={5}>Complete</Option>
+                                                                <Option value={4}>تم التوصيل</Option>
+                                                                <Option value={5}>مكتمل</Option>
                                                             </Select>
                                                         </div>
                                                         <div>
@@ -144,7 +144,7 @@ export const Order = (props) => {
                                     </tr>
                                     <div className='text-center mb-4' style={{ width: '100%', position: 'relative' }}>
                                         <th style={{ position: 'absolute', left: '200%', top: '0px', width: '100vw', maxWidth: "500px" }}>
-                                            <span>Placed At: {order?.placed}</span>
+                                            <span>وضعت في: {order?.placed}</span>
                                         </th>
                                     </div>
                                     {
@@ -158,7 +158,7 @@ export const Order = (props) => {
                                                         {product && product.name}
 
                                                     </th>
-                                                    <th>Qty:{product && product.qty}</th>
+                                                    <th>الكمية{product && product.qty}</th>
                                                     <th>{product && product.price * product.qty}$</th>
                                                 </tr>
                                             )
@@ -174,7 +174,7 @@ export const Order = (props) => {
             <Modal footer={false} width={800} title="User Info" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                 <div className="row">
                     <div className="col-md-6 my-4">
-                        <h6>Full Name:</h6>
+                        <h6>الاسم الكامل:</h6>
                         <b>{user.name}</b>
                     </div>
                     <div className="col-md-6 my-4">
@@ -185,21 +185,21 @@ export const Order = (props) => {
                 {
                     data && data.id ?
                         <div className="row">
-                            <h2>Payment Information:</h2>
+                            <h2>معلومات الدفع:</h2>
                             <div className="col-md-6 my-4">
-                                <h6>Paid:</h6>
+                                <h6>مدفوع:</h6>
                                 <b><span>True</span></b>
                             </div>
                             <div className="col-md-6 my-4">
-                                <h6>PayerID:</h6>
+                                <h6>صاحب الدفع:</h6>
                                 <b>{data?.payer?.payer_id}</b>
                             </div>
                             <div className="col-md-6 my-4">
-                                <h6>Payment ID:</h6>
+                                <h6>معرف الدفع:</h6>
                                 <b>{data?.id} </b>
                             </div>
                             <div className="col-md-6 my-4">
-                                <h6>Amount Paid:</h6>
+                                <h6>المبلغ المدفوع:</h6>
                                 <b>{data?.purchase_units[0]?.amount?.value}$</b>
                             </div>
                             <div className="col-md-6 my-4">
@@ -209,8 +209,8 @@ export const Order = (props) => {
                         </div>
                         :
                         <div>
-                            <h6>Payment Type:</h6>
-                            <b>Cash on Delivery </b>
+                            <h6>نوع الدفع:</h6>
+                            <b>الدفع عند الاستلام</b>
                         </div>
                 }
             </Modal>

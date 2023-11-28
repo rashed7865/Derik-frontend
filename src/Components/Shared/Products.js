@@ -28,14 +28,14 @@ export const SharedProducts = (props) => {
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Picture</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Seller</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">عنوان</th>
+                            <th scope="col">صورة</th>
+                            <th scope="col">وصف</th>
+                            <th scope="col">سعر</th>
+                            <th scope="col">كمية</th>
+                            <th scope="col">تاجر</th>
+                            <th scope="col">فئة</th>
+                            <th scope="col">Aktion</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,7 +50,7 @@ export const SharedProducts = (props) => {
                                                 <th scope="col"><img src={product?.productPicture && product?.productPicture[0]?.url} className='rounded' width='62' height='62' alt='product' /></th>
                                                 <td className='w-25' style={{ wordBreak: 'break-word' }}><div className='para' dangerouslySetInnerHTML={{ __html: product?.description }}></div></td>
                                                 <th scope="col">{product?.price}$</th>
-                                                <th scope="col"><span className='text-danger'>Out of Stock!</span></th>
+                                                <th scope="col"><span className='text-danger'>إنتهى من المخزن!</span></th>
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.category?.name}</th>
                                                 <th>
@@ -68,7 +68,7 @@ export const SharedProducts = (props) => {
                                                 <th scope="col"><img src={product?.productPicture && product?.productPicture[0]?.url} className='rounded' width='62' height='62' alt='product' /></th>
                                                 <td className='w-25' style={{ wordBreak: 'break-word' }}><div className='para' dangerouslySetInnerHTML={{ __html: product?.description }}></div></td>
                                                 <th scope="col">{product?.price}$</th>
-                                                <th scope="col">{product?.qty <= 1 ? <span className='text-danger'>Out of Stock!</span> : product?.qty}</th>
+                                                <th scope="col">{product?.qty <= 1 ? <span className='text-danger'>إنتهى من المخزن!</span> : product?.qty}</th>
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.category?.name}</th>

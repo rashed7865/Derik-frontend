@@ -121,7 +121,7 @@ export const Navbar = () => {
                 <Link className="ant-dropdown-link" to={"/seller/products"}>
                   <DashboardFilled style={{ fontSize: '21px' }} />
                   <br />
-                  <span style={{ fontSize: '14px' }}>Dashboard</span>
+                  <span style={{ fontSize: '14px' }}>لوحة التحكم</span>
                 </Link>
               </li>
             }
@@ -131,7 +131,7 @@ export const Navbar = () => {
                 <Link className="ant-dropdown-link" to={"/admin/products"}>
                   <DashboardFilled style={{ fontSize: '21px' }} />
                   <br />
-                  <span style={{ fontSize: '14px' }}>Dashboard</span>
+                  <span style={{ fontSize: '14px' }}>لوحةالتحكم</span>
                 </Link>
               </li>
             }
@@ -141,7 +141,7 @@ export const Navbar = () => {
                   <Link className="ant-dropdown-link" to="/profile">
                     <ProfileOutlined style={{ fontSize: '21px', }} />
                     <br />
-                    <span style={{ fontSize: '14px' }}>Profile</span>
+                    <span style={{ fontSize: '14px' }}>حساب تعريفي</span>
                   </Link>
                 </li>
                 :
@@ -149,7 +149,7 @@ export const Navbar = () => {
                   <Link className="ant-dropdown-link" to="/login">
                     <UserOutlined style={{ fontSize: '21px' }} />
                     <br />
-                    <span style={{ fontSize: '14px' }}>Login</span>
+                    <span style={{ fontSize: '14px' }}>تسجيل الدخول</span>
 
                   </Link>
                 </li>
@@ -157,7 +157,7 @@ export const Navbar = () => {
             <li className='ml-2 text-center'>
               <Badge count={isAuthenticated() && cart}>
                 <Link to='/cart'><ShoppingCartOutlined style={{ fontSize: '24px', paddingBottom: '4px' }} /><br /><span style={{ fontSize: '14px' }}>
-                Cart</span>
+                عربة التسوق</span>
                 </Link>
               </Badge>
             </li>
