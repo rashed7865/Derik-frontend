@@ -34,11 +34,11 @@ export const Profile = () => {
             <div className='profile'>
                 <div className='inner' style={{ marginTop: '10px', paddingTop: '47px', border: '1px solid #d4d5d9' }}>
                     <div>
-                        <h4>Profile Details</h4>
+                        <h4>تفاصيل الملف الشخصي</h4>
                         <div className='profile-data mt-4 pb-5' style={{ borderTop: '1px solid #d4d5d9' }}>
                             <div className='items'>
                                 <div>
-                                    <p> Full Name</p>
+                                    <p> الاسم الكامل</p>
                                 </div>
                                 <div>
                                     <p>{user.firstName} {user.lastName}</p>
@@ -46,7 +46,7 @@ export const Profile = () => {
                             </div>
                             <div className='items'>
                                 <div>
-                                    <p> Mobile Number</p>
+                                    <p> رقم الهاتف </p>
                                 </div>
                                 <div>
                                     <p>{user.phone}</p>
@@ -54,7 +54,7 @@ export const Profile = () => {
                             </div>
                             <div className='items'>
                                 <div>
-                                    <p>Email ID</p>
+                                    <p>عنوان الايميل</p>
                                 </div>
                                 <div>
                                     <p>{user.email}</p>
@@ -62,7 +62,7 @@ export const Profile = () => {
                             </div>
                             <div className='items'>
                                 <div>
-                                    <p>Location</p>
+                                    <p>الموقع</p>
                                 </div>
                                 <div>
                                     <p>{user.city} {user.country}</p>
@@ -70,7 +70,7 @@ export const Profile = () => {
                             </div>
                         </div>
                         <div className='p-3'>
-                            <Link to={`/profile/update/${user._id}`} className='btn btn-dark w-100'>Edit</Link>
+                            <Link to={`/profile/update/${user._id}`} className='btn btn-dark w-100'>تعديل</Link>
                         </div>
                     </div>
                 </div>
