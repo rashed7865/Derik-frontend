@@ -160,10 +160,10 @@ export const ProductCart = (props) => {
                       <div className='' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                           <div className='text-muted text-center'>
-                            <h4 className='mb-1' style={{ color: '#424553', fontSize: '40px' }}>Hey It feels so light!</h4>
-                            <p>لا يوجد شيء في حقيبتك. دعونا نضيف بعض العناصر🙂🙂</p>
+                            <h4 className='mb-1' style={{ color: '#424553', fontSize: '20px' }}>Hey It feels so light!</h4>
+                            <p>There is nothing in your bag. Let's add some items.</p>
                           </div>
-                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '20px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>Add</a>
+                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '14px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>Add</a>
                         </div>
                       </div>
                     </UserLayout>
@@ -172,7 +172,7 @@ export const ProductCart = (props) => {
                       <div className='row'>
                         <div className='col-md-8 pr-4'>
                           <div style={{ background: '#e5f6f2' }}>
-                            <h6 className='py-2 pl-2'>لقد حصلت عليه {products?.length} Item(s) for {products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
+                            <h6 className='py-2 pl-2'>You have got {products?.length} Item(s) for {products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
                             {
                               products?.map(prod => {
                                 return (
@@ -187,7 +187,7 @@ export const ProductCart = (props) => {
                                         {/* <p className='text-muted mt-0 pt-0'>Sold By: Saeed Ahmed</p> */}
                                         <a onClick={() => getProductById(prod?.productId)}>
                                           <span className='font-weight-bold'>
-                                            <span>الكمية: {prod.qty}</span>
+                                            <span>Qty: {prod.qty}</span>
                                             <CaretDownOutlined />
                                           </span>
                                         </a>
