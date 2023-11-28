@@ -163,7 +163,7 @@ export const ProductCart = (props) => {
                             <h4 className='mb-1' style={{ color: '#424553', fontSize: '40px' }}>Hey It feels so light!</h4>
                             <p>لا يوجد شيء في حقيبتك. دعونا نضيف بعض العناصر🙂🙂</p>
                           </div>
-                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '20px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>Add</a>
+                          <a href='/' className='btn w-100' style={{ border: '1px solid #2a3e53', color: '#2a3e53', fontWeight: '682', fontSize: '20px', borderRadius: '2px', textTransform: 'uppercase', padding: '10px' }}>أضف</a>
                         </div>
                       </div>
                     </UserLayout>

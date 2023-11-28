@@ -148,7 +148,7 @@ export const UserDrawer = ({ update }) => {
                                     <input name='phone' type="text" className="form-control" placeholder="Phone" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <button className='btn btn-dark w-100 mt-4' type="submit">Add</button>
+                            <button className='btn btn-dark w-100 mt-4' type="submit">أضف</button>
                         </form>
                     </div>
                 </div>

@@ -119,10 +119,10 @@ export const Product = (props) => {
                                     </h6>
 
                                     <div className='mt-4'>
-                                        <h5>Add <span>Quantity</span></h5>
+                                        <h5>أضف <span>كمية</span></h5>
                                         <InputNumber min={1} max={100000} defaultValue={1} onChange={(value) => setQtyToShop(value)} />
                                         {
-                                            <p className='mt-2'>{product.qty <= 1 && <span className='text-danger fw-bolder'>Product is almost out of stock!</span>}</p>
+                                            <p className='mt-2'>{product.qty <= 1 && <span className='text-danger fw-bolder'>المنتج على وشك النفاد من المخزون!</span>}</p>
                                         }
                                     </div>
                                     <div className='product-btn my-4'>

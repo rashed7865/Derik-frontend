@@ -168,7 +168,7 @@ export const EditUserDrawer = ({ update, user }) => {
                                     <input name='role' type="text" value={role} className="form-control" placeholder="Role" onChange={handleChange} />
                                 </div>
                             </div>
-                            <button className='btn btn-dark w-100 mt-4' type="submit">Add</button>
+                            <button className='btn btn-dark w-100 mt-4' type="submit">أضف</button>
                         </form>
                     </div>
                 </div>
