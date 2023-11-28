@@ -25,7 +25,7 @@ export const Paypal = (props) => {
                     // Replace with your onApprove logic (e.g., handling successful payment)
                     return actions.order.capture().then(function (details) {
                         // Handle successful payment here
-                        console.log("Payment completed: ", details);
+                        console.log("تم الدفع: ", details);
                         props.onSuccess(details);
                     });
                 }}
