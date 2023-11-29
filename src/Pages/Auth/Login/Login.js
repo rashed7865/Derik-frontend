@@ -44,7 +44,7 @@ export const Login = (props) => {
   return (
     <>
       <div className='auth'>
-        <div className="auth-inner-bubble-container">
+        <div className="auth-inner">
           <h2>تسجيل الدخول</h2>
           <p>تسجيل الدخول باستخدام البريد الإلكتروني وكلمة المرور</p>
           {
@@ -54,7 +54,7 @@ export const Login = (props) => {
               :
               <form onSubmit={submitHandler}>
                 <div className='item'>
-                  <label>Email البريد الإلكتروني</label>
+                  <label>اسم المستخدم او البريد الإلكتروني</label>
                   <div className="input-group">
                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                     <input required name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
