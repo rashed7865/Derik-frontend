@@ -51,20 +51,20 @@ export const Orders = () => {
                                             <tbody className='mb-5'>
                                                 <tr className='bg-secondary text-white'>
                                                     <th>
-                                                        Order #{index + 1}
+                                                    طلب #{index + 1}
                                                     </th>
                                                     <th>
-                                                        Order Id : {order._id}
+                                                    رقم التعريف الخاص بالطلب : {order._id}
                                                     </th>
                                                     <th>
-                                                        Total Price : {order?.totalPrice}$
+                                                    السعر الكلي: {order?.totalPrice}$
                                                     </th>
                                                     <th>
                                                         <span>Status : &nbsp;
-                                                            {order?.status === "1" && 'Just Placed'}
-                                                            {order?.status === "2" && 'Confirmed'}
-                                                            {order?.status === "3" && 'Prepared'}
-                                                            {order?.status === "4" && 'Delivered'}
+                                                            {order?.status === "1" && 'وضعت للتو'}
+                                                            {order?.status === "2" && 'مؤكد'}
+                                                            {order?.status === "3" && 'مُعد'}
+                                                            {order?.status === "4" && 'تم التوصيل'}
                                                             {order?.status === "5" && <CheckCircleOutlined className='fs-5 text-success bg-white rounded-circle' style={{ marginTop: '-10px' }} />}
                                                             {order?.status === "0" && <CloseCircleFilled className='fs-5 text-danger bg-white rounded-circle' style={{ marginTop: '-10px' }} />}
                                                         </span>
@@ -72,7 +72,7 @@ export const Orders = () => {
                                                 </tr>
                                                 <div className='text-center mb-4' style={{ width: '100%', position: 'relative' }}>
                                                     <th style={{ position: "absolute", left: '100%', top: '0px', width: '100vw', maxWidth: "500px" }}>
-                                                        <span>Placed At: {order.placed}</span>
+                                                        <span>وضعت في: {order.placed}</span>
                                                     </th>
                                                 </div>
                                                 {
@@ -86,7 +86,7 @@ export const Orders = () => {
                                                                     {product && product.name}
 
                                                                 </th>
-                                                                <th>Qty:{product && product.qty}</th>
+                                                                <th>الكمية:{product && product.qty}</th>
                                                                 <th>{product && product.price * product.qty}$</th>
                                                             </tr>
                                                         )
