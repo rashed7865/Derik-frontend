@@ -12,7 +12,7 @@ export const Error = (messages) => {
         className: "ant-message",
         content: messages,
         duration: 1,
-        style: { marginTop: '100px' }
+        style: { marginTop: '200px' }
     });
 }
 export const Warning = (messages) => {

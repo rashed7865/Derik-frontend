@@ -22,7 +22,7 @@ export const AdminSideBar = () => {
                                 <i className="fas fa-store"></i>
                             </div>
                             <div>
-                                <NavLink to='/admin/users'> Users </NavLink>
+                                <NavLink to='/admin/users'> المستخدمين </NavLink>
                             </div>
                         </div>
                     </Menu.Item>
@@ -32,7 +32,7 @@ export const AdminSideBar = () => {
                                 <i className="fas fa-store"></i>
                             </div>
                             <div>
-                                <NavLink to='/admin/sellers'> Sellers </NavLink>
+                                <NavLink to='/admin/sellers'> البائعين </NavLink>
                             </div>
                         </div>
                     </Menu.Item>
@@ -42,7 +42,7 @@ export const AdminSideBar = () => {
                                 <i className="fas fa-th-list"></i>
                             </div>
                             <div>
-                                <NavLink to='/admin/all-categories'>List of Categories</NavLink>
+                                <NavLink to='/admin/all-categories'>قائمة الفئات</NavLink>
                             </div>
                         </div>
                     </Menu.Item>
@@ -51,7 +51,7 @@ export const AdminSideBar = () => {
                             <i className="fas fa-chart-pie"></i>
                         </div>
                         <div>
-                            <NavLink to='/admin/products'>Products</NavLink>
+                            <NavLink to='/admin/products'>منتجات</NavLink>
                         </div>
                     </div>
                     </Menu.Item>
@@ -61,7 +61,7 @@ export const AdminSideBar = () => {
                                 <i className="fas fa-shopping-cart"></i>
                             </div>
                             <div>
-                                <NavLink to='/admin/orders'> Order Management</NavLink>
+                                <NavLink to='/admin/orders'> إدارة الطلبات</NavLink>
                             </div>
                         </div>
                     </Menu.Item>
@@ -72,7 +72,7 @@ export const AdminSideBar = () => {
                             </div>
                             <div>
                                 <a href='/login' onClick={() => { logout(() => { }) }}>
-                                    Logout
+                                تسجيل خروج
                                 </a>
                             </div>
                         </div>

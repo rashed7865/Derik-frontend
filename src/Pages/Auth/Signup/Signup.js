@@ -16,8 +16,8 @@ export const Signup = (props) => {
         confirm: '',
         city: '',
         state: '',
-      
-       
+        country: '',
+        zipCode: '',
         phone: ''
     });
 
@@ -61,6 +61,7 @@ export const Signup = (props) => {
                 <div className='auth'>
                     <div className="auth-inner-bubble-container">
                         <h2>إنشاء حساب</h2>
+                        <h2>الرجاء ادخال جميع المعلومات صحيحية</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
                                 <label>الاسم الأول</label>
@@ -91,7 +92,7 @@ export const Signup = (props) => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Passwordإنشاء كلمة المرور</label>
+                                <label>كلمة المرور</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
                                     <input required name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
@@ -105,39 +106,44 @@ export const Signup = (props) => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>City مدينة</label>
+                                <label>المدينة/البلدة</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='مدينة' type="text" className="form-control" placeholder="مدينة" onChange={handleChange} aria-label="City" aria-describedby="basic-addon1" />
+                                    <input required name='city' type="text" className="form-control" placeholder="City" onChange={handleChange} aria-label="City" aria-describedby="basic-addon1" />
                                 </div>
-                                
+                            </div>
+                            <div className='item'>
+                                <label>العنوان</label>
+                                <div className="input-group">
+                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
+                                    <input required name='state' type="text" className="form-control" placeholder="State" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <label>رقم المنزل</label>
+                                <div className="input-group">
+                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
+                                    <input required name='country' type="text" className="form-control" placeholder="Country" onChange={handleChange} aria-label="Country" aria-describedby="basic-addon1" />
+                                </div>
                             </div>
                             
-                          
-                           
+                            
                             <div className='item'>
-                                <label>رقم الهاتف</label>
+                                <label>Phone</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='الهاتف' type="text" className="form-control" placeholder="الهاتف" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
+                                    <input required name='phone' type="text" className="form-control" placeholder="Phone" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <div className='item'>
-                                <label>العنوان </label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='العنوان' type="text" className="form-control" placeholder="العنوان" onChange={handleChange} aria-label="العنوان" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
-                            <button className='btn' type="submit">إنشاء الحساب</button>
+                            <button className='btn' type="submit">Signup</button>
                         </form>
-                        <div className='end-text'>  
-                            <div>هل لديك حساب؟</div>
-                           
+                        <div className='end-text'>
+                            
+                            <Link to="/login">
+                                <b className='auth-inner-bubble-container'>سجل الدخول من هنا</b>
+                            </Link>
+                            <b className='auth-inner-bubble-container'>لديك حساب؟</b>
                         </div>
-                        <Link to="/login">
-                            <button className='btn' type="submit">اذهب إلى حسابي
- </button>                            </Link>
                     </div>
                 </div>
             </>
