@@ -62,7 +62,7 @@ export const Profile = () => {
                             </div>
                             <div className='items'>
                                 <div>
-                                    <p>الموقع</p>
+                                    <p>العنوان</p>
                                 </div>
                                 <div>
                                     <p>{user.city} {user.country}</p>

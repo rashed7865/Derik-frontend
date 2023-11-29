@@ -51,16 +51,16 @@ export const Orders = () => {
                                             <tbody className='mb-5'>
                                                 <tr className='bg-secondary text-white'>
                                                     <th>
-                                                    طلب #{index + 1}
+                                                     {index + 1} :طلب
                                                     </th>
                                                     <th>
-                                                    رقم التعريف الخاص بالطلب : {order._id}
+                                                     {order._id} : رقم التعريف الخاص بالطلب 
                                                     </th>
                                                     <th>
-                                                    السعر الكلي: {order?.totalPrice}$
+                                                 {order?.totalPrice}$ السعر الكلي
                                                     </th>
                                                     <th>
-                                                        <span>Status : &nbsp;
+                                                        <span>الحالة  &nbsp;
                                                             {order?.status === "1" && 'وضعت للتو'}
                                                             {order?.status === "2" && 'مؤكد'}
                                                             {order?.status === "3" && 'مُعد'}
@@ -72,7 +72,7 @@ export const Orders = () => {
                                                 </tr>
                                                 <div className='text-center mb-4' style={{ width: '100%', position: 'relative' }}>
                                                     <th style={{ position: "absolute", left: '100%', top: '0px', width: '100vw', maxWidth: "500px" }}>
-                                                        <span>وضعت في: {order.placed}</span>
+                                                        <span> {order.placed}وضعت في</span>
                                                     </th>
                                                 </div>
                                                 {
@@ -101,7 +101,7 @@ export const Orders = () => {
                                     :
 
                                     <div className='d-flex justify-content-center align-items-center' style={{ minHeight: '40vh' }}>
-                                        <p className='fs-4'>No Orders!</p>
+                                        <p className='fs-4'>لايوجد طلبات</p>
                                     </div>
                             }
 
