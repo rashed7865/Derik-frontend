@@ -129,20 +129,20 @@ export const Signup = (props) => {
                             
                             
                             <div className='item'>
-                                <label>Phone</label>
+                                <label>رقم الهاتف</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
                                     <input required name='phone' type="text" className="form-control" placeholder="Phone" onChange={handleChange} aria-label="Phone" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <button className='btn' type="submit">Signup</button>
+                            <button className='btn' type="submit">تسجيل</button>
                         </form>
                         <div className='end-text'>
                             
                             <Link to="/login">
                                 <b className='auth-inner-bubble-container'>سجل الدخول من هنا</b>
                             </Link>
-                            <b className='auth-inner-bubble-container'>لديك حساب؟</b>
+                            <b className='auth'>لديك حساب؟</b>
                         </div>
                     </div>
                 </div>
