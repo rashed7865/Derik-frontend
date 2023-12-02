@@ -95,25 +95,22 @@ export const Navbar = () => {
         </div>
       </nav>
     </div> */}
-    <div className='hero_area'>
-    <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        {/* <a class="navbar-brand" href="index.html">
-          <span>
-          Dêrik-online-shop
-          </span>
-        </a> */}
+<div className='hero_area'>
+<header class="header_section">
+<nav class="navbar navbar-expand-lg custom_nav-container ">              {}
        
 
-        <div className='flex gap-4'>
-        <Link className="navbar-brand text-center mx-3" to="/">
-          <img src={logo} alt="Logo" width="100px" style={{borderRadius:'10px'}} />
+<div className='container-fluid'>
+<div className='row'>
+<Link className="navbar-brand text-center col-md-4 col-lg-3 mx-3" to="/">                  
+   <img src={logo} alt="Logo" width="100px" style={{ borderRadius: '10px' }}  />
         </Link>
-          <span style={{fontSize:'25px',fontWeight:'bold'}}>
-          Dêrik-online-shop
+        <div className='col-md-8 col-lg-9 d-flex align-items-center justify-content-end'>
+        <span style={{ fontSize: '25px', fontWeight: 'bold', marginRight: '15px' }}>
+                    Dêrik-online-shop
           </span>
-        <ul className="navbar-nav ml-auto list-unstyle pt-3 mx-4 gap-4 gap-md-0" style={{ fontSize: '12px' }}>
-            {
+          <ul className="navbar-nav list-unstyle d-flex gap-4 gap-md-0" style={{ fontSize: '12px', flexWrap: 'nowrap' }}>
+                        {
               isAuthenticated()?.role === 2 &&
               <li className='nav-item profile text-center' style={{ fontWeight: 'normal' }}>
                 <Link className="ant-dropdown-link" to={"/seller/products"}>
@@ -157,16 +154,16 @@ export const Navbar = () => {
                 <Link to='/cart'><ShoppingCartOutlined style={{ fontSize: '24px', paddingBottom: '4px' }} /><br /><span style={{ fontSize: '14px' }}>
                 عربة التسوق</span>
                 </Link>
-              </Badge>
-            </li>
-          </ul>
+                </Badge>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-    </header>
-
-
-    </div>
-    </>
-    
-  )
-}
+      </div>
+    </nav>
+  </header>
+</div>
+ 
+</>
+  );
+};

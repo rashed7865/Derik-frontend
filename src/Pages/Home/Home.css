@@ -68,13 +68,20 @@
 .all-products .menuItem {
     padding-top: 10px;
 }
-
 .all-products .main-row .col-md-2 {
     background: #fff;
     padding: 23px 0px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
     border: 1px solid rgba(0, 0, 0, .05);
 }
+
+/* Zwei Produkte in einer Zeile auf kleinen Bildschirmen */
+@media (max-width: 767px) {
+    .all-products .main-row .col-md-2 {
+        width: 50%; /* Jede Spalte nimmt 50% der Breite auf */
+    }
+}
+    
 
 #settingsMenu {
     display: none;
@@ -116,3 +123,30 @@
     font-size: 14px;
     color: #333333;
 }
+.detail-box {
+    text-align: center; /* Zentriert den Text */
+    padding: 20px; /* Innenabstand für den Inhalt */
+    border: 1px solid #ccc; /* Beispielrahmen für die detail-box */
+    border-radius: 10px; /* Runde Ecken für die detail-box */
+    margin-bottom: 20px; /* Abstand nach unten für den Abstand zu anderen Elementen */
+    background-color: #f9f9f9; /* Hintergrundfarbe für die detail-box */
+  }
+  
+  .detail-box h1 {
+    color: #333; /* Textfarbe für den h1-Titel */
+    font-weight: bold; /* Fettschrift für den h1-Titel */
+  }
+  
+  .detail-box p {
+    color: #666; /* Textfarbe für den Absatz */
+  }
+  
+  .detail-box a {
+    color: #007bff; /* Standardfarbe für den Link-Text */
+    text-decoration: none; /* Entfernt die Standardunterstreichung von Links */
+  }
+  
+  .detail-box a:hover {
+    text-decoration: underline; /* Unterstreichung hinzufügen, wenn der Link gehovered wird */
+  }
+  
