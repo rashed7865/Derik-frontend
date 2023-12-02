@@ -7,6 +7,8 @@ import { isAuthenticated } from './Auth/auth';
 import { ShoppingCartOutlined, ProfileOutlined, DashboardFilled, UserOutlined } from '@ant-design/icons';
 import logo from "../assets/logo.png";
 import bannerImage from "../assets/images/slider-img.png";
+import bannerImage2 from "../assets/images/p2.png";
+
 import lineImage from "../assets/images/line.png";
 
 
@@ -101,19 +103,15 @@ export const Navbar = () => {
           Dêrik-online-shop
           </span>
         </a> */}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""></span>
-        </button>
+       
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div className='flex gap-4'>
         <Link className="navbar-brand text-center mx-3" to="/">
           <img src={logo} alt="Logo" width="100px" style={{borderRadius:'10px'}} />
         </Link>
-          <span style={{fontSize:'22px',fontWeight:'bold'}}>
+          <span style={{fontSize:'25px',fontWeight:'bold'}}>
           Dêrik-online-shop
           </span>
-        </div>
         <ul className="navbar-nav ml-auto list-unstyle pt-3 mx-4 gap-4 gap-md-0" style={{ fontSize: '12px' }}>
             {
               isAuthenticated()?.role === 2 &&
