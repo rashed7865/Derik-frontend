@@ -11,8 +11,6 @@ export const Home = () => {
 
   return (
     <>
-        
-        <div className="auth-inner"></div>
         <section class="slider_section">
   <div class="slider_container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -20,12 +18,14 @@ export const Home = () => {
         <div class="carousel-item active">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="detail-box">
-                <h1 style={{ color: 'black', fontSize: '1rem', marginBottom: '20px' }}>               
-                   مرحبًا بك في ديريك اون لاين شوب!<br/>
+                  <h1 style={{color:'white'}}>
+                  مرحبًا بك في ديريك اون لاين شوب!<br/>
+                  تجربة تسوق فريدة
                   </h1>
-                  <p style={{ fontSize: '1rem', color: 'black' }}>                مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
+                  <p>
+                  مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
                   </p>
                   <Link href="" >
                    اتصل بنا
@@ -497,7 +497,6 @@ export const Home = () => {
   </div>
 
 </section>
- 
         </>
       
     )
