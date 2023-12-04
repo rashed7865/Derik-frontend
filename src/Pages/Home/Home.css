@@ -87,7 +87,7 @@
 .all-products .sidebar button:hover,
 .all-products .sidebar .menuItem:hover {
     font-weight: 600;
-    color: #000;
+    color: #961212;
 }
 
 #menuContainer div:hover+#settingsMenu,
@@ -98,14 +98,14 @@
     left: 16%;
     ;
     z-index: 100;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(91, 34, 34);
     padding: 19px;
     padding-left: 28px;
     height: 400px;
     word-break: break-all !important;
     min-width: 32px;
     max-width: 32% !important;
-    box-shadow: 10px 10px 10px rgb(197 200 213 / 76%);
+    box-shadow: 10px 10px 10px rgba(36, 59, 164, 0.76);
 }
 
 .all-products .sidebar button:focus {
@@ -116,3 +116,30 @@
     font-size: 14px;
     color: #333333;
 }
+.detail-box {
+    text-align: center; /* Zentriert den Text */
+    padding: 20px; /* Innenabstand für den Inhalt */
+    border: 1px solid #ccc; /* Beispielrahmen für die detail-box */
+    border-radius: 10px; /* Runde Ecken für die detail-box */
+    margin-bottom: 20px; /* Abstand nach unten für den Abstand zu anderen Elementen */
+    background-color: #f9f9f9; /* Hintergrundfarbe für die detail-box */
+  }
+  
+  .detail-box h1 {
+    color: #333; /* Textfarbe für den h1-Titel */
+    font-weight: bold; /* Fettschrift für den h1-Titel */
+  }
+  
+  .detail-box p {
+    color: #666; /* Textfarbe für den Absatz */
+  }
+  
+  .detail-box a {
+    color: #007bff; /* Standardfarbe für den Link-Text */
+    text-decoration: none; /* Entfernt die Standardunterstreichung von Links */
+  }
+  
+  .detail-box a:hover {
+    text-decoration: underline; /* Unterstreichung hinzufügen, wenn der Link gehovered wird */
+  }
+  

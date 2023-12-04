@@ -11,56 +11,60 @@ export const Home = () => {
 
   return (
     <>
+        
+        <div className="auth-inner"></div>
         <section class="slider_section">
   <div class="slider_container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1 style={{color:'white'}}>
-                  مرحبًا بك في ديريك اون لاين شوب!<br/>
-                  تجربة تسوق فريدة
-                  </h1>
-                  <p>
-                  مع ديريك اون لاين  يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
-                  </p>
-                  <Link href="" >
-                   اتصل بنا
-                  </Link>
-                </div>
-              </div>
-              <div class="col-md-5 ">
-                <div class="img-box">
-                  <img src={bannerImage} alt="" />
-                </div>
-              </div>
+  <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">  <div className="carousel-inner">
+  <div className="carousel-inner">
+  <div className="carousel-item active">
+  <div className="container">
+
+            <div className="row">
+          <div className="col-md-5">
+                  <div 
+
+className ="detail-box" style={{ width: '70%' }}>              
+                    <h1 style={{ color: 'white', fontSize: '1rem', marginBottom: '1px' }}>                              مرحبًا بك في ديريك اون لاين شوب<br />
+              </h1>
+              <p style={{ fontSize: '1rem', color: 'black' }}>
+                مع ديريك اون لاين يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
+              </p>
+              <Link href="">
+                اتصل بنا
+              </Link>
+            </div>
             </div>
           </div>
+          <div className="col-md-5">
+            <div className="img-box">
+              <img src={bannerImage} alt="" style={{ maxWidth: '30%' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    
         </div>
         <div class="carousel-item ">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
+              <div class="detail-box" style={{ width: '70%' }}>
+              <h1 style={{ color: 'white', fontSize: '1rem', marginBottom: '1px' }}>
                   عروض حصرية <br/>
                   
           
                   </h1>
-                  <p>
-                  اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات.  </p>
+                  <p style={{ fontSize: '1rem' }}>  
+                   اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات  </p>
                   <Link href="" >
                   اتصل بنا
                   </Link>
                 </div>
               </div>
-              <div class="col-md-5 ">
+              <div class="col-md-4">
                 <div class="img-box">
-                  <img src={bannerImage} alt="" />
-                </div>
+                <img src={bannerImage} alt="" style={{ maxWidth: '30%' }} />                </div>
               </div>
             </div>
           </div>
@@ -497,6 +501,7 @@ export const Home = () => {
   </div>
 
 </section>
+ 
         </>
       
     )

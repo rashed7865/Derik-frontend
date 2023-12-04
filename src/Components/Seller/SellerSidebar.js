@@ -41,7 +41,7 @@ export const SellerSidebar = () => {
                                 <i className="fas fa-sign-out-alt"></i>
                             </div>
                             <div>
-                                <a href='/login' onClick={() => { logout(() => { }) }}>
+                                <a href='/login' onClick={() => { logout(() => { }) }} style={{ fontSize: '11px' }}>
                                 تسجيل خروج
                                 </a>
                             </div>
