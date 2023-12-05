@@ -21,10 +21,10 @@ export const Home = () => {
   <div className="container">
 
             <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-6 col-7">
                   <div 
 
-className ="detail-box" style={{ width: '70%' }}>              
+className ="detail-box">              
                     <h1 style={{ color: 'white', fontSize: '1rem', marginBottom: '1px' }}>                              مرحبًا بك في ديريك اون لاين شوب<br />
               </h1>
               <p style={{ fontSize: '1rem', color: 'black' }}>
@@ -35,12 +35,13 @@ className ="detail-box" style={{ width: '70%' }}>
               </Link>
             </div>
             </div>
-          </div>
-          <div className="col-md-5">
+            <div className="col-md-6 col-5">
             <div className="img-box">
-              <img src={bannerImage} alt="" style={{ maxWidth: '30%' }} />
+              <img src={bannerImage} alt="" style={{maxWidth:"100%"}}/>
             </div>
           </div>
+          </div>
+    
         </div>
       </div>
     
