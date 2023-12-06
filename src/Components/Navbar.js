@@ -129,10 +129,16 @@ export const Navbar = () => {
                   <span style={{ fontSize: '11px' }}>لوحةالتحكم</span>
                 </Link>
               </li>
+
             }
             {
               isAuthenticated() ?
-                <li className='nav-item profile text-center' style={{ fontWeight: 'normal' }}>
+
+                <li className='nav-item profile text-center d-flex flex-row align-items-center justify-content-center' style={{ fontWeight: 'normal' , marginRight:"10px"}}>
+  <a href='/login' onClick={() => { logout(() => { }) }} style={{ fontSize: '11px', marginRight:"10px" }}>
+  <ProfileOutlined  style={{ fontSize: '21px', paddingBottom: '4px' }} /> <br/>
+    تسجيل خروج
+  </a>
                   <Link className="ant-dropdown-link" to="/profile">
                     <ProfileOutlined  style={{ fontSize: '21px', paddingBottom: '4px' }} />
                     <br />

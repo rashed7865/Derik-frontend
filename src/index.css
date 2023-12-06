@@ -762,8 +762,8 @@ input:not(:focus):valid~.floating-label {
     .navbar > .container-fluid > .row > div > ul > li{
         margin: 0px !important;
     }
-    .navbar > .container-fluid > .row > div > ul > li span{
-        font-size: 3vw !important;
+    .navbar > .container-fluid > .row > div > ul > li span, #root > div > div > div.hero_area > header > nav > div > div > div > ul > li.nav-item.profile.text-center.d-flex.flex-row.align-items-center.justify-content-center > a:nth-child(1){
+        font-size: 2vw !important;
     }
     .navbar > .container-fluid > .row > div > ul{
         gap: 10px !important;
@@ -793,3 +793,17 @@ input:not(:focus):valid~.floating-label {
     }
 }
 
+@media only screen and (max-width:575px){
+    #homepage-product-cards{
+        width: 50%;
+    }
+    #saving_section_row {
+        flex-direction: row-reverse !important;
+    }
+  }
+
+
+
+.saving_section .img-box {
+  padding: 0;
+}

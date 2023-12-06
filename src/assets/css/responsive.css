@@ -37,7 +37,7 @@
     }
 
     .saving_section .row {
-        flex-direction: column-reverse;
+        flex-direction: row;
     }
 
     .saving_section .detail-box {

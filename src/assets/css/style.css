@@ -431,9 +431,9 @@ a:focus {
           align-items: center;
 }
 
-.saving_section .img-box {
+/* .saving_section .img-box {
   padding: 15px 0 0 25px;
-}
+} */
 
 .saving_section .img-box img {
   width: 100%;

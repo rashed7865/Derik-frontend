@@ -128,7 +128,7 @@ export const LatestProducts = () => {
           {products.length > 0 &&
             products.map((product, index) => {
               return (
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-md-2" id="homepage-product-cards">
                  <ProductCard  product={product} key={index}/>
                 </div>
               );

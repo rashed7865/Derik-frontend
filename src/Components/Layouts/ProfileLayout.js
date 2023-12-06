@@ -22,16 +22,16 @@ export const ProfLayout = (props) => {
       }
   }, []);
     return (
-        <div>
+        <div style={{padding:"5% 15%"}}>
            {
                props.sidebar ? 
                <>
        
-                <div style = {{ marginLeft: '180px' }}> 
+                <div> 
                 <b className = 'mb-0 pb-0'>حساب</b>
                 <p className = 'mb-3'>{user.firstName} {user.lastName}</p>
                 </div> 
-               <div className = 'row' style = {{borderTop: '1px solid #d4d5d9', marginLeft: '180px', marginRight: '200px'}}>
+               <div className = 'row' style = {{borderBottom: '1px solid #d4d5d9'}}>
               <div className = 'col-md-3'>
                 <ProfileSideBar/>
               </div>

@@ -24,7 +24,7 @@ export const ProfileSideBar = () => {
                 </div>
                 <div className='prof-div'>
                  
-                    <div className="text-center">
+                    <div className="text-left">
   <a href='/login' onClick={() => { logout(() => { }) }} style={{ fontSize: '11px' }}>
     تسجيل خروج
   </a>

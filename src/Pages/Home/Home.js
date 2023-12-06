@@ -113,13 +113,13 @@ className ="detail-box">
       <section class="saving_section ">
   <div class="box">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row" id='saving_section_row'>
+        <div class="col-5">
           <div class="img-box">
-            <img src={saving} alt="" />
+            <img src={saving} alt="" style={{height:"100%"}} />
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-7">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
