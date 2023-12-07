@@ -9,21 +9,36 @@ getYear();
 
 // owl carousel 
 
-$('.owl-carousel').owlCarousel({
+// $('.carousel-inner').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     autoplay: true,
+//     slideBy: 1,
+//     autoplayHoverPause: true,
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         600: {
+//             items: 3
+//         },
+//         1000: {
+//             items: 6
+//         }
+//     }
+// })
+$('.carousel-inner').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:2,
+    margin:30,
+    stagePadding:30,
     autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 6
-        }
-    }
-})
+    smartSpeed:450,
+    autoplay: true,
+    slideBy: 2,
+});
