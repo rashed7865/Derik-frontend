@@ -22,7 +22,7 @@ export const ProfLayout = (props) => {
       }
   }, []);
     return (
-        <div style={{padding:"5% 15%"}}>
+        <div style={{padding:"5% 20px"}}>
            {
                props.sidebar ? 
                <>

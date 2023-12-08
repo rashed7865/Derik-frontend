@@ -45,11 +45,12 @@ export const Profile = () => {
                                 </div>
                             </div>
                             <div className='items'>
-                                <div>
-                                    <p> رقم الهاتف </p>
-                                </div>
+                             
                                 <div>
                                     <p>{user.phone}</p>
+                                </div>
+                                <div>
+                                    <p> رقم الهاتف </p>
                                 </div>
                             </div>
                             <div className='items'>
