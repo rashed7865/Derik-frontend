@@ -143,3 +143,6 @@
     text-decoration: underline; /* Unterstreichung hinzufügen, wenn der Link gehovered wird */
   }
   
+  .gap-4 {
+    gap: 0.5rem!important;
+}

@@ -134,8 +134,7 @@ export const Navbar = () => {
             {
               isAuthenticated() ?
 
-                <li className='nav-item profile text-center d-flex flex-row align-items-center justify-content-center' style={{ fontWeight: 'normal' , marginRight:"10px"}}>
-  
+<li className='nav-item profile text-center ml-1 mr-5' style={{ fontWeight: 'bold', color: '#00ff00' }}>  
                   <Link className="ant-dropdown-link" to="/profile">
                     <ProfileOutlined  style={{ fontSize: '21px', paddingBottom: '4px' }} />
                     <br />
@@ -152,8 +151,11 @@ export const Navbar = () => {
 </li>
 
             }
-<li className='nav-item profile text-center ml-1 mr-3' style={{ fontWeight: 'normal' }}>  
-  <Badge count={isAuthenticated() && cart}>
+<li className='nav-
+
+item 
+
+profile text-center ml-1 mr-5' style={{ fontWeight: 'bold', color: '#00ff00' }}>  <Badge count={isAuthenticated() && cart}>
     <Link to='/cart' className="d-flex flex-column align-items-center">
       <ShoppingCartOutlined style={{ fontSize: '21px', paddingBottom: '4px' }} />
       <span style={{ fontSize: '11px' }}>عربة التسوق</span>
