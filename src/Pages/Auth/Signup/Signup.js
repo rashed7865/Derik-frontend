@@ -64,18 +64,12 @@ export const Signup = (props) => {
                         <h2>الرجاء ادخال جميع المعلومات صحيحية</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
-                                <label>الاسم الأول</label>
+                                <label>الاسم الكامل</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='firstName' type="text" className="form-control" placeholder="First Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
+                                    <input required name='firstName' type="text" className="form-control" placeholder="اسم الاول والعائلة" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
-                            </div>
-                            <div className='item'>
-                                <label>اسم العائلة</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='lastName' type="text" className="form-control" placeholder="Last Name" onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1" />
-                                </div>
+                         
                             </div>
                             <div className='item'>
                                 <label>Email بريد إلكتروني</label>
@@ -113,19 +107,13 @@ export const Signup = (props) => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>العنوان</label>
+                                <label> العنوان ورقم المنزل </label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='state' type="text" className="form-control" placeholder="State" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
+                                    <input required name='state' type="text" className="form-control" placeholder="الرجاء ادخال تفاصيل العنوان الصحيحة" onChange={handleChange} aria-label="State" aria-describedby="basic-addon1" />
                                 </div>
                             </div>
-                            <div className='item'>
-                                <label>رقم المنزل</label>
-                                <div className="input-group">
-                                    <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input required name='country' type="text" className="form-control" placeholder="Country" onChange={handleChange} aria-label="Country" aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
+                           
                             
                             
                             <div className='item'>

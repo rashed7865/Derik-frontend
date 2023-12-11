@@ -131,6 +131,9 @@ export const Navbar = () => {
               </li>
 
             }
+            
+     
+            
             {
               isAuthenticated() ?
 
@@ -149,6 +152,7 @@ export const Navbar = () => {
     <span style={{ fontSize: '11px' }}>تسجيل الدخول</span>
   </Link>
 </li>
+
 
             }
 <li className='nav-

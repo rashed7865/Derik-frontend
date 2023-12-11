@@ -37,11 +37,12 @@ export const Profile = () => {
                         <h4>تفاصيل الملف الشخصي</h4>
                         <div className='profile-data mt-4 pb-5' style={{ borderTop: '1px solid #d4d5d9' }}>
                             <div className='items'>
-                                <div>
-                                    <p> الاسم الكامل</p>
-                                </div>
+                              
                                 <div>
                                     <p>{user.firstName} {user.lastName}</p>
+                                </div>
+                                <div>
+                                    <p> الاسم الكامل</p>
                                 </div>
                             </div>
                             <div className='items'>
@@ -54,19 +55,21 @@ export const Profile = () => {
                                 </div>
                             </div>
                             <div className='items'>
-                                <div>
-                                    <p>عنوان الايميل</p>
-                                </div>
+                              
                                 <div>
                                     <p>{user.email}</p>
                                 </div>
+                                <div>
+                                    <p>عنوان الايميل</p>
+                                </div>
                             </div>
                             <div className='items'>
-                                <div>
-                                    <p>العنوان</p>
-                                </div>
+                               
                                 <div>
                                     <p>{user.city} {user.country}</p>
+                                </div>
+                                <div>
+                                    <p>العنوان</p>
                                 </div>
                             </div>
                         </div>
