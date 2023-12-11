@@ -92,11 +92,11 @@ export const AllProducts = () => {
                         </div>
                     </div>
                     <div className='col-md-10 px-5'>
-                        <div className='row Dêrik-online-shop-1'>
+                        <div className='row Dêrik-online-shop-1' style={{rowGap:"10px"}}>
                             {
                                 products.length > 0 && products.map((product, index) => {
                                     return (
-                                        <div className='col-md-4 col-lg-3'>
+                                        <div className='col-md-4 col-lg-3 col-6 product_cards'>
                                             <ProductCard product={product} />
                                         </div>
 

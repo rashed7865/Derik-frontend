@@ -854,6 +854,31 @@ input:not(:focus):valid~.floating-label {
     .product-page .col-12 img{
     height: auto !important;
 }
+.product_cards{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ .product_cards img{
+    height: 200px !important;
+    object-fit: cover;
+}
+.shop_section .box .img-box img{
+    height: 250px;
+    max-height:100%;
+    
+width: 100%;
+}
+.shop_section .row{
+    row-gap: 10px;
+}
+.shop_section .box{
+    height: 100% !important;
+}
+.shop_section .box .img-box{
+    padding: 0px !important;
+
+    margin-bottom: 10px;
+}
 }
 .saving_section .img-box {
   padding: 0;

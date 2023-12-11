@@ -5,7 +5,7 @@ import './ProductCard.css'
 export const ProductCard = ({ product }) => {
   return (
     <>
-      <div className="m-2 product-card">
+      <div className="m-2 product-card h-100">
         <Link to={"/product/" + product._id}>
           <img
             src={
