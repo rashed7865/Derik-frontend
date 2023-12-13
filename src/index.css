@@ -244,7 +244,6 @@ div.rc-virtual-list-holder {
 
 
 .product-btn>.ant-btn-lg {
-    width: 221px;
     height: 54px !important;
     background: #2a3e53 !important;
     color: white !important;
@@ -275,8 +274,7 @@ div.rc-virtual-list-holder {
 .cart {
     background:
         linear-gradient(rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)),
-        url('https://locallylahore.com/wp-content/uploads/nawab-bazaar.jpg');
+            rgba(0, 0, 0, 0.6));
     background-size: 100vw 100%;
     background-attachment: fixed;
     min-height: 100vh !important;
@@ -754,10 +752,10 @@ input:not(:focus):valid~.floating-label {
         width: 100%;
     }
     .navbar > .container-fluid > .row > a.navbar-brand img{
-        width: 13vw;
+        width: 11vw;
     }
     .navbar > .container-fluid > .row > a.navbar-brand span{
-        font-size: 3.5vw !important;
+        font-size: 3vw !important;
     }
     .navbar > .container-fluid > .row > div > ul > li{
         margin: 0px !important;
@@ -879,6 +877,13 @@ width: 100%;
 
     margin-bottom: 10px;
 }
+#root > div > div > div.hero_area > header > nav > div > div > div > ul{
+    gap:10px !important;
+}
+#logout_btn > svg,  .anticon-profile > svg, .anticon-shopping-cart > svg{
+    width: 20px !important;
+    height: 20px !important;
+}
 }
 .saving_section .img-box {
   padding: 0;
@@ -902,4 +907,11 @@ width: 100%;
 }
 .anticon svg {
 font-size: xx-large;
+}
+.ant-input-search-large .ant-input-search-button {
+    height: 49.6px;
+}
+#logout_btn > svg{
+    width: 30px;
+    height: 30px;
 }

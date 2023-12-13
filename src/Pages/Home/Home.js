@@ -486,11 +486,11 @@ className ="detail-box">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <span>ديريك السوق المركزي</span>
                   </a>
-                  <a href="">
+                  <a href="tel:+963 999 229 437">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <span>+963 999 229 437</span>
                   </a>
-                  <a href="">
+                  <a href="mailto:rashedecomm728@gmail.com">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <span> rashedecomm728@gmail.com</span>
 
