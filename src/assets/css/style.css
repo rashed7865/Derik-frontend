@@ -863,6 +863,10 @@ element.style {
   padding-bottom: 5px;
 }
 style attribute {
-  font-family: xx-large;
+  font: xx-large;
   padding-bottom: 5px;
+}
+/* styles.css (oder eine andere Datei) */
+.custom-button {
+  background-color: red;
 }

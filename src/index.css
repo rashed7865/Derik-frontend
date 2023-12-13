@@ -915,3 +915,8 @@ font-size: xx-large;
     width: 30px;
     height: 30px;
 }
+/* styles.css (oder eine andere Datei) */
+.custom-button {
+    background-color: DEINE_FARBE;
+  }
+  

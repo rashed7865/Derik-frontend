@@ -490,8 +490,10 @@ className ="detail-box">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <span>+963 999 229 437</span>
                   </a>
+
                   <a href="mailto:rashedecomm728@gmail.com">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
+                    
                     <span> rashedecomm728@gmail.com</span>
 
                   </a>          </div>

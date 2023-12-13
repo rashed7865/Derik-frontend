@@ -82,8 +82,11 @@ export const Login = (props) => {
       <Link to="/signup">
         <button className='btn' type="submit">إنشاء حساب</button>
       </Link>
+      <span>  نسيت كلمة المرور </span>
+
       <a href="mailto:rashedecomm728@gmail.com" className='forget_password'>
-        <button className='btn'>نسيت كلمة المرور </button>
+
+        <button className='btn'>تواصل معنا ل اعادة كلمة المرور </button>
       </a>
           <div className='end-text'>
         
