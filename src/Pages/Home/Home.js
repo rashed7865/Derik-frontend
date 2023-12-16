@@ -30,9 +30,9 @@ className ="detail-box">
               <p style={{ fontSize: '1rem', color: 'black' }}>
                 مع ديريك اون لاين يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
               </p>
-              <Link href="">
+              <a href="tel:+963999229437">
                 اتصل بنا
-              </Link>
+              </a>
             </div>
             </div>
             <div className="col-md-6 col-5">
@@ -56,9 +56,9 @@ className ="detail-box">
                   </h1>
                   <p style={{ fontSize: '1rem' }}>  
                    اكتشف عروضنا الحصرية واحصل على خصومات رائعة على مجموعة متنوعة من المنتجات  </p>
-                  <Link href="" >
-                  اتصل بنا
-                  </Link>
+                   <a href="tel:+963999229437">
+                اتصل بنا
+              </a>
                 </div>
               </div>
               <div className="col-md-6 col-5">
@@ -79,9 +79,9 @@ className ="detail-box">
                   </h1>
                   <p>
                   تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
-                  <Link href="" >
-                  اتصل بنا
-                  </Link>
+                  <a href="tel:+963999229437">
+                اتصل بنا
+              </a>
                 </div>
               </div>
               <div className="col-md-6 col-5">
