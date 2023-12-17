@@ -842,6 +842,28 @@ input:not(:focus):valid~.floating-label {
         justify-content: center;
         align-items: center;
     }
+    .desktoplogo{
+        display: none !important;
+    }
+    a.mobilelogo {
+        display: block !important;
+        padding: 10px 40px;
+        background-color: #db4566;
+        color: #ffffff;
+        border: 1px solid #db4566;
+        border-radius: 5px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 25px;
+        text-transform: uppercase;
+      }
+      
+      a.mobilelogo:hover {
+        background-color: transparent;
+        color: #db4566;
+      }
     .gift_section .img-box img{
         max-height: 200px;
         object-fit: cover;
@@ -905,9 +927,9 @@ width: 100%;
 .ant-layout-sider-children  a{
     line-height: 100 !important;
 }
-.anticon svg {
+/* .anticon svg {
 font-size: xx-large;
-}
+} */
 .ant-input-search-large .ant-input-search-button {
     height: 49.6px;
 }

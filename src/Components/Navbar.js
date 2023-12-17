@@ -9,6 +9,7 @@ import { ShoppingCartOutlined, ProfileOutlined, DashboardFilled, UserOutlined } 
 import logo from "../assets/logo.png";
 import bannerImage from "../assets/images/slider-img.png";
 import bannerImage2 from "../assets/images/p2.png";
+import bannerImage3 from "../assets/images/slid2.png";
 
 import lineImage from "../assets/images/line.png";
 

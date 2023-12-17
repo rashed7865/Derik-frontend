@@ -5,6 +5,10 @@ import saving from './../../assets/images/saving-img.png'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import bannerImage from "./../../assets/images/slider-img.png";
 import lineImage from "./../../assets/images/line.png";
+import bannerImage2 from "./../../assets/images/slider.png";
+import bannerImage3 from "./../../assets/images/slid2.png";
+
+
 export const Home = () => {
 
 
@@ -17,39 +21,35 @@ export const Home = () => {
   <div class="slider_container">
   <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">  <div className="carousel-inner">
   <div className="carousel-inner">
-  <div className="carousel-item active">
-  <div className="container">
-
-            <div className="row">
-          <div className="col-md-6 col-7">
-                  <div 
-
-className ="detail-box">              
-                    <h1 style={{ color: 'white', fontSize: '1rem', marginBottom: '1px' }}>                              مرحبًا بك في ديريك اون لاين شوب<br />
-              </h1>
-              <p style={{ fontSize: '1rem', color: 'black' }}>
-                مع ديريك اون لاين يمكنك اكتشاف مجموعة واسعة من المنتجات الرائعة التي تناسب الجميع. سواء كنت تبحث عن ملابس أنيقة، أو أجهزة إلكترونية حديثة، أو فريدة، لدينا كل ما تحتاجه
-              </p>
-              <a href="tel:+963999229437">
+     <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+            <div className="col-md-6 col-12">
+              <div class="detail-box">
+              <h1 style={{ color: 'white', fontSize: '2rem', marginBottom: '1px', textAlign: "center" }}>
+              مرحبًا بك في ديريك اون لاين شوب<br/>
+                  </h1>
+                  <a className='desktoplogo'  href="tel:+963999229437">
                 اتصل بنا
               </a>
-            </div>
-            </div>
-            <div className="col-md-6 col-5">
-            <div className="img-box">
-              <img src={bannerImage} alt="" style={{maxWidth:"100%"}}/>
+                </div>
+              </div>
+              <div className="col-md-5 col-12">
+                
+                <div class="img-box" style={{display: 'flex !important', flexDirection: 'column' , alignItems: 'center', justifyContent:'centerhuna'}}>
+                <img src={bannerImage2} alt="" style={{ width: '100%', height: '80%', objectFit: 'cover' }} />               <a className='mobilelogo d-none'   href="tel:+963999229437">
+                اتصل بنا
+              </a>  </div>
+              </div>
             </div>
           </div>
           </div>
-    
-        </div>
-      </div>
       <div class="carousel-item ">
           <div class="container">
             <div class="row">
             <div className="col-md-6 col-7">
               <div class="detail-box" style={{ width: '70%' }}>
-              <h1 style={{ color: 'white', fontSize: '1rem', marginBottom: '1px' }}>
+              <h1 style={{ color: 'red', fontSize: '1.5rem', marginBottom: '1px' }}>
                   عروض حصرية <br/>
                   
           
@@ -63,7 +63,7 @@ className ="detail-box">
               </div>
               <div className="col-md-6 col-5">
                 <div class="img-box">
-                <img src={bannerImage} alt="" style={{ maxWidth: '100%' }} />                </div>
+                  <img src={bannerImage3} alt="" style={{maxWidth:"100%"}}  />                </div>
               </div>
             </div>
           </div>
@@ -71,14 +71,15 @@ className ="detail-box">
         <div class="carousel-item ">
           <div class="container">
             <div class="row">
-            <div className="col-md-6 col-7">
+            <div className="col-md-5 col-6">
                 <div class="detail-box">
-                  <h1>
-                  تسوق بثقة<br/>
+                  <h1>                  <p style={{ fontSize: '2rem' }}>  
+
+                  تسوّق بأمان وراحة في مكان واحد<br/> </p>
                   
                   </h1>
                   <p>
-                  تسوق بثقة معنا نحن هنا لتلبية توقعاتك وضمان راحتك في كل عملية شراء               </p>
+                  استمتع بتجربة تسوق سلسة مع خدمة التوصيل السريع            </p>
                   <a href="tel:+963999229437">
                 اتصل بنا
               </a>
