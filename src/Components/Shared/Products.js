@@ -34,7 +34,9 @@ export const SharedProducts = (props) => {
                             <th scope="col">سعر</th>
                             <th scope="col">كمية</th>
                             <th scope="col">تاجر</th>
+                            <th scope="col"></th>
                             <th scope="col">فئة</th>
+                            <th scope="col">مقاس</th>
                             <th scope="col">Aktion</th>
                         </tr>
                     </thead>
@@ -53,6 +55,7 @@ export const SharedProducts = (props) => {
                                                 <th scope="col"><span className='text-danger'>إنتهى من المخزن!</span></th>
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.category?.name}</th>
+                                                <th scope="col">{product?.sizes?.join(', ')}</th>
                                                 <th>
                                                     <Link to={isAuthenticated().role === 1 ? `/admin/product/update/${product?._id}` : `/seller/product/update/${product?._id}`} className='btn' style={{ textDecoration: 'none' }}><EditOutlined /></Link>
                                                     <button className='btn' onClick={() => deleteHandler(product?._id)}><DeleteOutlined /></button>
@@ -72,6 +75,8 @@ export const SharedProducts = (props) => {
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.seller?.firstName} {product?.seller?.lastName}</th>
                                                 <th scope="col">{product?.category?.name}</th>
+                                                <th scope="col">{product?.sizes?.join(', ')}</th>
+
                                                 <th>
                                                     <Link to={isAuthenticated().role === 1 ? `/admin/product/update/${product?._id}` : `/seller/product/update/${product?._id}`} className='btn' style={{ textDecoration: 'none' }}><EditOutlined /></Link>
                                                     <button className='btn' onClick={() => deleteHandler(product?._id)}><DeleteOutlined /></button>
