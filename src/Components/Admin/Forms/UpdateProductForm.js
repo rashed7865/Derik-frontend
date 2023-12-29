@@ -7,7 +7,7 @@ import { Error, Success, Warning } from "../../Messages/messages";
 import { Link } from 'react-router-dom';
 import Loading from '../../Loading/Loading';
 import { isAuthenticated } from '../../Auth/auth';
-import { DeleteFilled, MinusCircleFilled,PlusCircleFilled } from "@ant-design/icons";
+import { DeleteFilled } from "@ant-design/icons";
 
 
 const { TreeNode } = TreeSelect;
@@ -29,27 +29,6 @@ export const UpdateProductForm = (props) => {
     });
 
     const { title, price, qty } = productData;
-
-    
-    // ------------ Handle Size -----------------
-
-    const [sizes, setSizes] = useState([]); // Initialize with an empty size
-    const handleSizeChange = (index, value) => {
-        const updatedSizes = [...sizes];
-        updatedSizes[index] = value;
-        console.log(updatedSizes)
-        setSizes(updatedSizes);
-    };
-
-    const addSizeField = () => {
-        setSizes([...sizes, '']);
-    };
-
-    const removeSizeField = (index) => {
-        const updatedSizes = [...sizes];
-        updatedSizes.splice(index, 1);
-        setSizes(updatedSizes);
-    };
 
     /***********************************************onChange *******************************************/
     const handleProductChange = (e) => {
@@ -79,7 +58,6 @@ export const UpdateProductForm = (props) => {
                 setDescription(res.data.description);
                 setMainCat(res.data.category?._id);
                 setSeller(res.data.Seller);
-                setSizes(res.data.sizes)
             } else {
                 Error(res.data.errorMessage);
             }
@@ -108,12 +86,6 @@ export const UpdateProductForm = (props) => {
             data.append('Seller', Seller);
             data.append('category', mainCat);
             data.append('productPicture', productPicture);
-
-              // Sizes
-              sizes.forEach((size, index) => {
-                data.append(`sizes[${index}]`, size);
-            });
-
             if (file?.length > 0) {
                 for (let pic of file) {
                     data.append('file', pic);
@@ -187,24 +159,6 @@ export const UpdateProductForm = (props) => {
                             <div className="form-group mt-4">
                                 <input type="Number" value={qty} className="form-control mb-2" id='qty' name='qty' placeholder="Enter Product Qty" onChange={handleProductChange} />
                             </div>
-                            <div className="form-group mt-4" >
-                                {sizes.map((size, index) => (
-
-                                    <div key={index} className="mb-2" style={{ display: 'flex', flexDirection: 'row' }}>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder={`Enter Size #${index + 1}`}
-                                            value={size}
-                                            onChange={(e) => handleSizeChange(index, e.target.value)}
-                                        />
-                                        <MinusCircleFilled style={{ color: 'crimson', fontSize: '24px', cursor: 'pointer', margin: 'auto 5px' }} onClick={() => removeSizeField(index)} />
-                                    </div>
-                                ))}
-                                <PlusCircleFilled style={{ color: 'Green', fontSize: '24px', cursor: 'pointer', margin: 'auto 5px' }} onClick={addSizeField} />
-
-                            </div>
-
                             <div className='mt-3'>
                                 <ReactQuill placeholder="Product Description" theme="snow" value={description} onChange={(val) => setDescription(val)} />
                             </div>

@@ -7,7 +7,7 @@ import { Error, Success, Warning } from "../../Messages/messages";
 import { Link } from 'react-router-dom';
 import Loading from '../../Loading/Loading';
 import { isAuthenticated } from '../../Auth/auth';
-import { DeleteFilled, PlusCircleFilled, MinusCircleFilled } from "@ant-design/icons";
+import { DeleteFilled } from "@ant-design/icons";
 
 const { TreeNode } = TreeSelect;
 
@@ -21,31 +21,11 @@ export const CreateProductForm = () => {
     const [productData, setProductData] = useState({
         title: '',
         price: '',
-        qty: '',
+        qty: ''
     });
 
     const { title, price, qty } = productData;
 
-
-    // ------------ Handle Size -----------------
-
-    const [sizes, setSizes] = useState([]); // Initialize with an empty size
-    const handleSizeChange = (index, value) => {
-        const updatedSizes = [...sizes];
-        updatedSizes[index] = value;
-        console.log(updatedSizes)
-        setSizes(updatedSizes);
-    };
-
-    const addSizeField = () => {
-        setSizes([...sizes, '']);
-    };
-
-    const removeSizeField = (index) => {
-        const updatedSizes = [...sizes];
-        updatedSizes.splice(index, 1);
-        setSizes(updatedSizes);
-    };
     /***********************************************onChange *******************************************/
     const handleProductChange = (e) => {
         setProductData({
@@ -81,22 +61,15 @@ export const CreateProductForm = () => {
         else {
             // setLoading(true);
             let data = new FormData();
-            data.append('title', title);
+            data.append('title', title); 
             data.append('description', description);
             data.append('price', price);
             data.append('qty', qty);
-            data.append('Seller', Seller);
-            data.append('category', cat);
-
-            // Sizes
-            sizes.forEach((size, index) => {
-                data.append(`sizes[${index}]`, size);
-            });
-
-            for (let pic of file) {
+            data.append('Seller', Seller);   
+            data.append('category', cat); 
+            for (let pic of file) { 
                 data.append('file', pic);
             }
-
             axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/products/create`, data, {
                 headers: {
                     authorization: 'Bearer ' + localStorage.getItem('token')
@@ -163,25 +136,6 @@ export const CreateProductForm = () => {
                             <div className="form-group mt-4">
                                 <input type="qty" className="form-control mb-2" name='qty' placeholder="Enter Product's Qty" onChange={handleProductChange} />
                             </div>
-                            <div className="form-group mt-4" >
-                                {sizes.map((size, index) => (
-
-                                    <div key={index} className="mb-2" style={{ display: 'flex', flexDirection: 'row' }}>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder={`Enter Size #${index + 1}`}
-                                            value={size}
-                                            onChange={(e) => handleSizeChange(index, e.target.value)}
-                                        />
-                                        <MinusCircleFilled style={{ color: 'crimson', fontSize: '24px', cursor: 'pointer', margin: 'auto 5px' }} onClick={() => removeSizeField(index)} />
-                                    </div>
-                                ))}
-
-                                <PlusCircleFilled style={{ color: 'Green', fontSize: '24px', cursor: 'pointer', margin: 'auto 5px' }} onClick={addSizeField} />
-
-                            </div>
-
                             <div className='mt-3'>
                                 <ReactQuill placeholder="Product Description" theme="snow" value={description} onChange={setDescription} />
                             </div>

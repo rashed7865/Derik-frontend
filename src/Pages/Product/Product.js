@@ -1,4 +1,4 @@
-import { Button, InputNumber, Select } from 'antd';
+import { Button, InputNumber } from 'antd';
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
@@ -11,8 +11,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import './Product.css'
 import Loading from '../../Components/Loading/Loading';
 
-const { Option } = Select; 
-
 export const Product = (props) => {
     const productId = props.match.params.id;
     let userId = isAuthenticated()._id;
@@ -20,11 +18,7 @@ export const Product = (props) => {
     const [qtyToShop, setQtyToShop] = useState('1');
     const [pic, setPic] = useState('');
     const [loading, setLoading] = useState(false);
-    const [selectedSize, setSelectedSize] = useState(null);
 
-    const handleSizeChange = (value) => {
-        setSelectedSize(value);
-    };
 
     const getProduct = async () => {
         setLoading(true);
@@ -65,8 +59,7 @@ export const Product = (props) => {
                     image: product.productPicture[0],
                     qty: qtyToShop,
                     totalQty: product?.qty,
-                    Seller: product?.Seller,
-                    sizes:selectedSize,
+                    Seller: product?.Seller
                 };
                 await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/cart/add-to-cart`, requestData, {
                     headers: {
@@ -122,7 +115,7 @@ export const Product = (props) => {
                                         <span>{product.price}$</span>
                                     </h5>
                                     <h6 style={{ color: '#03a685' }} className='font-weight-bold'>
-                                        استغل العرض الحالي
+                                    استغل العرض الحالي
                                     </h6>
 
                                     <div className='mt-4'>
@@ -132,29 +125,9 @@ export const Product = (props) => {
                                             <p className='mt-2'>{product.qty <= 1 && <span className='text-danger fw-bolder'>المنتج على وشك النفاد من المخزون!</span>}</p>
                                         }
                                     </div>
-
-                                    {product.sizes && product.sizes.length > 0 && (
-                                        <div className='mt-4'>
-                                            <h5>
-                                                اختر <span>الحجم</span>
-                                            </h5>
-                                            <Select defaultValue="Select Size" style={{ width: '100%' }} onChange={(value) => handleSizeChange(value)}>
-                                                {product.sizes.map((size) => (
-                                                    <Option key={size} value={size}>
-                                                        {size}
-                                                    </Option>
-                                                ))}
-                                            </Select>
-                                            {product.qty <= 1 && (
-                                                <p className='mt-2'>
-                                                    <span className='text-danger fw-bolder'>المنتج على وشك النفاد من المخزون!</span>
-                                                </p>
-                                            )}
-                                        </div>
-                                    )}
                                     <div className='product-btn my-4'>
                                         <Button onClick={handleCart} size='large' icon={<ShoppingCartOutlined style={{ fontSize: '26px' }} />}>
-                                            أضف الى سلة المشتريات
+                                        أضف الى سلة المشتريات
                                         </Button>
                                     </div>
                                     <div>

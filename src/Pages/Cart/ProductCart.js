@@ -192,9 +192,7 @@ export const ProductCart = (props) => {
                                           </span>
                                         </a>
                                       </div>
-                                      <span  className='font-weight-bold'>{prod.sizes}</span>
                                     </div>
-                                  
                                     <div className='col-3'><span className='fw-bold'>{prod.price * prod.qty}$</span></div>
                                     <div className=''>
                                       <button className='border border-bottom w-100 mt-2' style={{ border: 'none', background: 'white', height: '40px', fontWeight: 'bolder', color: '#696b79' }} onClick={() => removeHandler(prod.productId)}>إزالة</button>

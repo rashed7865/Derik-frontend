@@ -43,7 +43,7 @@ export const Login = (props) => {
 
   return (
     <>
-
+    
       <div className='auth'>
         <div className="auth-inner">
           <h2>تسجيل الدخول</h2>
@@ -69,32 +69,27 @@ export const Login = (props) => {
                   </div>
                 </div>
                 <button className='btn' type="submit">تسجيل الدخول
-                </button>
+</button>
               </form>
           }
+             
+
+              <div className='not-have-account'>
+        ليس لديك حساب؟
+      </div>
 
 
-          <div className='not-have-account'>
-            ليس لديك حساب؟
-          </div>
+      <Link to="/signup">
+        <button className='btn' type="submit">إنشاء حساب</button>
+      </Link>
+      <span>  نسيت كلمة المرور </span>
 
+      <a href="mailto:rashedecomm728@gmail.com" className='forget_password'>
 
-          <Link to="/signup">
-            <button className='btn' type="submit">إنشاء حساب</button>
-          </Link>
-
-          <span>  نسيت كلمة المرور </span>
-          {/* <a href="mailto:rashedecomm728@gmail.com" className='forget_password'>
-            <button className='btn'>تواصل معنا ل اعادة كلمة المرور </button>
-          </a> */}
-
-
-          <Link to="/forget-password">
-          <button className='btn'> نسيت كلمة المرور </button>
-          </Link>
-
+        <button className='btn'>تواصل معنا ل اعادة كلمة المرور </button>
+      </a>
           <div className='end-text'>
-
+        
           </div>
         </div>
       </div>

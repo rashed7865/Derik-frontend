@@ -22,8 +22,6 @@ import { Footer } from './Components/Footer/Footer';
 import { NotAuthorisedPage } from './Pages/403';
 import { Login } from './Pages/Auth/Login/Login';
 import { Signup } from './Pages/Auth/Signup/Signup';
-import { ForgetPassword } from './Pages/Auth/ForgetPassword/ForgetPassword';
-import { ResetPassword } from './Pages/Auth/ForgetPassword/ResetPassword';
 import { Navbar } from './Components/Navbar';
 import { CreateProducts } from './Pages/Admin/Products/CreateProducts';
 import { Sellers } from './Pages/Admin/Sellers/Sellers';
@@ -52,8 +50,6 @@ const App = () => {
 
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
-            <Route exact path='/forget-password' component={ForgetPassword} />
-            <Route exact path="/reset-password/:id/:token" component={ResetPassword} />
             <Route exact path='/product/:id' component={Product} />
             <Route exact path='/cart' component={ProductCart} />
             <Route exact path='/checkout/payment' component={Payment} />
