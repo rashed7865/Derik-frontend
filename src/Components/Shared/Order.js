@@ -1,4 +1,4 @@
-import { CheckCircleOutlined, CloseCircleFilled, CloseOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, CloseCircleFilled, CloseOutlined,DeleteOutlined, DeleteFilled } from '@ant-design/icons';
 import { Button, Modal, Popconfirm, Select } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
@@ -65,6 +65,22 @@ export const Order = (props) => {
             }
         })
     }
+    const removeOrder = async (orderId) => {
+        console.log(orderId)
+        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/orders/order/remove/${orderId}`, {
+            headers: {
+                'authorization': 'Bearer ' + localStorage.getItem('token')
+            }
+        }).then(res => {
+            if (res.status === 200) {
+                Success(res.data.successMessage);
+                props.update && props.update();
+            }
+            else {
+                Error(res.data.errorMessage)
+            }
+        })
+    }
 
 
     function cancel(e) {
@@ -82,14 +98,14 @@ export const Order = (props) => {
                                 <tbody>
                                     <tr className='bg-secondary text-white'>
                                         <th>
-                                        طلبات #{index + 1}
+                                            طلبات #{index + 1}
 
                                         </th>
                                         <th>
-                                        رقم الطلب  : {order?._id}
+                                            رقم الطلب  : {order?._id}
                                         </th>
                                         <th>
-                                        السعر الكلي : {order?.totalPrice}$
+                                            السعر الكلي : {order?.totalPrice}$
                                         </th>
                                         <th>
                                             <button className='text-white' onClick={() => { showModal(); setUser(order?.user); setData(order?.data) }}>Customer</button>
@@ -107,6 +123,7 @@ export const Order = (props) => {
                                                 {order?.status === "0" && <CloseCircleFilled className='fs-5 text-danger bg-white rounded-circle' style={{ marginTop: '-10px' }} />}
                                             </span>
                                         </th>
+
                                         {
                                             order.status !== "5" && order.status !== "0" &&
                                             <>
@@ -141,6 +158,7 @@ export const Order = (props) => {
                                                 </th>
                                             </>
                                         }
+                                        <th style={{ cursor: "pointer" }}><DeleteFilled  className='text-danger fs-4' onClick={() => removeOrder(order?._id)}/></th>
                                     </tr>
                                     <div className='text-center mb-4' style={{ width: '100%', position: 'relative' }}>
                                         <th style={{ position: 'absolute', left: '200%', top: '0px', width: '100vw', maxWidth: "500px" }}>
@@ -160,6 +178,9 @@ export const Order = (props) => {
                                                     </th>
                                                     <th>الكمية{product && product.qty}</th>
                                                     <th>{product && product.price * product.qty}$</th>
+                                                    
+                                                    {product && product.sizes &&  <th>Size: {product.sizes}</th>}
+
                                                 </tr>
                                             )
                                         })
