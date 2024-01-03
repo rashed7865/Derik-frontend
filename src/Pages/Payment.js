@@ -98,10 +98,12 @@ export const Payment = (props) => {
       <UserLayout navbar>
         <div className='row payment' style={{ marginLeft: '10px' }}>
           <div className='col-md-8 pr-6'>
-            <div style={{ width: '100%' }}>
-              <div className='jumbotron jumbotron-fluid mt-4 border payment p-4'>
-                <div>
-                  <h4>Pay with Paypal</h4>
+          <div style={{ width: '100%' }}>
+  <div className='jumbotron jumbotron-fluid mt-4 border payment p-4'>
+    <div>
+      <h4 style={{ color: 'black' }}>Pay with Paypal
+        الدفع بواسط باى بال
+      </h4>
                   <div className='my-5'>
                     <Paypal
                       toPay={totalPrice}

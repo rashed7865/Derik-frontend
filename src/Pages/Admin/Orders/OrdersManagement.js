@@ -40,7 +40,7 @@ export const OrdersManagement = () => {
             <div className='orders admin-orders pt-5'>
                 <Tabs defaultActiveKey="1">
                     <TabPane tab="All" key="1">
-                        Sort Orders:
+                    ترتيب الطلبات:
                         <Select
                             showSearch
                             style={{ width: '100%' }}

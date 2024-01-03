@@ -114,7 +114,7 @@ export const Order = (props) => {
                                             <div className='text-white border p-1'>تاجر:  {order?.seller?.firstName} {order?.seller?.lastName}</div>
                                         </th>
                                         <th>
-                                            <span>Status : &nbsp;
+                                            <span>حالة : &nbsp;
                                                 {order?.status === "1" && 'Just Placed'}
                                                 {order?.status === "2" && 'Confirmed'}
                                                 {order?.status === "3" && 'Prepared'}
@@ -179,7 +179,7 @@ export const Order = (props) => {
                                                     <th>الكمية{product && product.qty}</th>
                                                     <th>{product && product.price * product.qty}$</th>
                                                     
-                                                    {product && product.sizes &&  <th>Size: {product.sizes}</th>}
+                                                    {product && product.sizes &&  <th>المقاسات: {product.sizes}</th>}
 
                                                 </tr>
                                             )

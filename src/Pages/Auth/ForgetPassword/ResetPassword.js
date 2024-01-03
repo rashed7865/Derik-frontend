@@ -62,7 +62,7 @@ export const ResetPassword = (props) => {
             <>
                 <div className='auth'>
                     <div className="auth-inner">
-                        <h2>Reset Password</h2>
+                        <h2>إعادة تعيين كلمة المرور</h2>
                         <form onSubmit={submitHandler}>
                             <div className='item'>
                                 <label>كلمة المرور</label>
