@@ -172,7 +172,7 @@ export const ProductCart = (props) => {
                       <div className='row'>
                         <div className='col-md-8 pr-4'>
                           <div style={{ background: '#e5f6f2' }}>
-                            <h6 className='py-2 pl-2'>لقد حصلت على {products?.length} من العناصر{products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
+                            <h6 className='py-2 pl-2'>لقد حصلت عليه {products?.length} العناصر{products?.reduce((a, b) => a + b?.qty * b.price?.toString(), 0)}$</h6>
                             {
                               products?.map(prod => {
                                 return (
@@ -192,10 +192,12 @@ export const ProductCart = (props) => {
                                           </span>
                                         </a>
                                       </div>
+                                      <span  className='font-weight-bold'>{prod.sizes}</span>
                                     </div>
+                                  
                                     <div className='col-3'><span className='fw-bold'>{prod.price * prod.qty}$</span></div>
                                     <div className=''>
-                                      <button className='border border-bottom w-100 mt-2' style={{ border: 'none', background: 'bolds', height: '40px', fontWeight: 'bolder', color: '#696b79' }} onClick={() => removeHandler(prod.productId)}>إزالة</button>
+                                      <button className='border border-bottom w-100 mt-2' style={{ border: 'none', background: 'white', height: '40px', fontWeight: 'bolder', color: '#696b79' }} onClick={() => removeHandler(prod.productId)}>إزالة</button>
                                     </div>
                                   </div>
                                 )
@@ -205,7 +207,7 @@ export const ProductCart = (props) => {
                           </div>
                         </div>
 
-                        <Modal title='حددالكمية' footer={false} width={380} visible={isQtyModalVisible} onOk={handleQtyOk} onCancel={handleQtyCancel}>
+                        <Modal title='Select Amount' footer={false} width={380} visible={isQtyModalVisible} onOk={handleQtyOk} onCancel={handleQtyCancel}>
                           <h4> حددالكمية </h4>
                           <InputNumber min={1} max={100000} defaultValue={product?.qty} value={qtyToShop} onChange={(value) => setQtyToShop(value)} />
                           <div className='text-center mt-2'>
